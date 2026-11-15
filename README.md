@@ -38,6 +38,12 @@ python tools/build_content.py --data "C:/path/to/isla-velaluz-kaggle"
 The folder must hold `sample/`, `DATA_DICTIONARY.md`, `data_dictionary.csv` and `QUESTIONS.md` (the Kaggle download has all four).
 Commit the changed JSON. The website build itself never needs Python or the dataset.
 
+## The spoiler wall
+
+`npm run build` finishes by running `tools/check_site.mjs`. The build fails if a resort page uses analysis vocabulary
+(breakdowns, budgets, turnover and so on), if any page's HTML contains the address of the generator repo, if the answers
+gate loses its `noindex`, or if an internal link is broken. No answers live in this repo.
+
 ## Deploy
 
 Vercel builds and publishes on every push to `main`. Framework preset: Next.js. No environment variables.

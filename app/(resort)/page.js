@@ -18,6 +18,7 @@ export default function Home() {
             Two theme parks, a water park and four hotels on a Gulf barrier island, where every evening ends with
             the lanterns coming on along the shore.
           </p>
+          <p className={styles.heroCta}><Link href="/plan/" className={styles.cta}>Plan a visit</Link></p>
         </div>
       </section>
 

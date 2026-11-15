@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import PageHero from '@/components/PageHero';
+import Link from 'next/link';
 import MaybeLink from '@/components/MaybeLink';
 import { hotels, venues, bySlug, published, href, longDate, titleCase } from '@/lib/content';
 import s from '@/styles/resort.module.css';
@@ -24,7 +25,10 @@ export default async function HotelPage({ params }) {
         artLabel={`Illustration of ${h.hotel_name} at dusk.`} />
       <div className={`wrap ${s.body}`}>
         <div className={s.cols}>
-          <div className={s.prose}>{h.description.map((p) => <p key={p}>{p}</p>)}</div>
+          <div className={s.prose}>
+            {h.description.map((p) => <p key={p}>{p}</p>)}
+            <p><Link href="/plan/">Plan a stay at {h.hotel_name}</Link></p>
+          </div>
           <aside className={s.facts}>
             <h2>At a glance</h2>
             <dl>

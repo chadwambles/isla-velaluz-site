@@ -11,9 +11,11 @@ export default function SiteFooter({ theme }) {
           nothing here can be booked or bought. The site exists to give analysts a realistic company to study.
         </p>
         <ul className={styles.links}>
+          <li><Link href="/about/">About this site</Link></li>
           <li><Link href="/data/">Data Center</Link></li>
           <li><a href={KAGGLE_URL}>Get the dataset on Kaggle</a></li>
           <li><a href={AUTHOR_URL}>Made by Chad Wambles</a></li>
+          {theme === 'chart' && <li><Link href="/data/answers/" rel="nofollow">Answer key (spoilers)</Link></li>}
         </ul>
       </div>
     </footer>

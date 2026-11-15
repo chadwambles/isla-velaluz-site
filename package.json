@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npx serve out"
+    "start": "npx serve out",
+    "postbuild": "node tools/check_site.mjs",
+    "check": "node tools/check_site.mjs"
   },
   "dependencies": {
     "@fontsource-variable/albert-sans": "^5.1.0",

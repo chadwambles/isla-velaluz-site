@@ -8,6 +8,7 @@ const RESORT = [
   ['Shopping', '/shopping/'],
   ['Events', '/events/'],
   ['Tickets', '/tickets/'],
+  ['Plan a visit', '/plan/'],
 ];
 
 const DATA = [

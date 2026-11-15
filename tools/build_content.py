@@ -159,6 +159,23 @@ def build_resort(con, S):
         from '{S}/calendar.parquet' where year = (select max(year) from '{S}/calendar.parquet') group by all order by low""")
     write("tickets", {"passes": passes, "one_day_prices": prices})
 
+    # Typical prices for the practice trip planner: what guests paid in the latest year
+    rooms = rows(con, f"""
+        select h.hotel_name, h.hotel_code, h.tier, r.room_type_name, r.sleeps, round(median(s.nightly_rate)) nightly_rate
+        from '{S}/hotel_stays.parquet' s join '{S}/room_types.parquet' r using (room_type_id) join '{S}/hotels.parquet' h on h.hotel_id = s.hotel_id
+        where year(s.check_in_date) = (select max(year(check_in_date)) from '{S}/hotel_stays.parquet')
+        group by all order by min(h.hotel_id), nightly_rate""")
+    adult = rows(con, f"""
+        select ticket_days, includes_water_park, round(median(price_paid)) price from '{S}/tickets.parquet'
+        where age_class = 'adult' and price_paid > 0 and year(valid_from) = (select max(year(valid_from)) from '{S}/tickets.parquet')
+        group by all order by includes_water_park, ticket_days""")
+    ratio = con.execute(f"""
+        with m as (select age_class, ticket_days, includes_water_park, median(price_paid) p, count(*) n from '{S}/tickets.parquet'
+                   where price_paid > 0 and year(valid_from) = (select max(year(valid_from)) from '{S}/tickets.parquet') group by all)
+        select round(median(c.p / a.p), 2) from m c join m a using (ticket_days, includes_water_park)
+        where c.age_class = 'child' and a.age_class = 'adult' and c.n >= 30""").fetchone()[0]
+    write("plan", {"rooms": rooms, "adult_tickets": adult, "child_ratio": ratio})
+
     write("parks", parks)
     write("lands", lands)
     write("attractions", attractions)

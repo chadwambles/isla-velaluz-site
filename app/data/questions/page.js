@@ -57,7 +57,7 @@ export default function Questions() {
         <p>
           <strong>Checking your work.</strong> The answers are published separately, behind a spoiler notice. A finding is
           worth more in a portfolio when it is yours, so try the question first. If you publish what you find, please mark
-          spoilers.
+          spoilers. When you are ready, <Link href="/data/answers/" rel="nofollow">this page says where the answers are</Link>.
         </p>
       </div>
     </div>
