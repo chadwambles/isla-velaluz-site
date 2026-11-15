@@ -1,0 +1,20 @@
+/* Lantern Hour: the resort at dusk. Applied by the .theme-lantern wrapper. */
+.theme-lantern {
+  --tide: #0d2b3c;        /* deep water, page ground in dark bands */
+  --dusk: #2a2a5c;        /* upper sky */
+  --hibiscus: #d2456b;    /* horizon glow, links on light */
+  --lantern: #f5b041;     /* lantern light, primary accent */
+  --seafog: #e7eef0;      /* light bands */
+  --ink: #0f2230;         /* text on light */
+  --foam: #f7fbfb;        /* text on dark */
+
+  --ground: var(--seafog);
+  --text: var(--ink);
+  --muted: #4a5f6b;
+  --rule: #c5d3d8;
+  --link: #a52c4f;
+  --accent: var(--lantern);
+
+  --font-display: 'Gloock', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Albert Sans Variable', 'Albert Sans', system-ui, sans-serif;
+}

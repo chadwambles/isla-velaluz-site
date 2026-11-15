@@ -1,0 +1,20 @@
+/* Chart Room: a navigator's desk. Applied by the .theme-chart wrapper (Data Center). */
+.theme-chart {
+  --paper: #eef1e4;       /* nautical chart paper */
+  --shoal: #cfe0e6;       /* shallow-water tint for panels */
+  --navy: #17324d;        /* ink lines and text */
+  --brass: #94681f;       /* instruments, secondary accent */
+  --rose: #b0306a;        /* compass-rose magenta, links and marks */
+  --land: #e4d9b4;        /* land tint for callouts */
+
+  --ground: var(--paper);
+  --text: var(--navy);
+  --muted: #4d6274;
+  --rule: #9fb3bf;
+  --link: var(--rose);
+  --accent: var(--brass);
+
+  --font-display: 'Gloock', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Albert Sans Variable', 'Albert Sans', system-ui, sans-serif;
+  --font-code: 'Azeret Mono', ui-monospace, Menlo, monospace;
+}
