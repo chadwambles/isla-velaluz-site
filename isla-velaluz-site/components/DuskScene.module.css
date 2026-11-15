@@ -1,0 +1,14 @@
+.scene { position: absolute; right: 0; bottom: 0; width: max(100%, 64rem); max-width: none; height: auto; }
+
+.lantern { opacity: 0; animation: light 0.9s ease-out forwards; }
+@keyframes light { from { opacity: 0; } to { opacity: 1; } }
+
+.beam { transform-origin: 1128px 232px; animation: sweep 14s ease-in-out infinite alternate; }
+@keyframes sweep { from { transform: rotate(-9deg); } to { transform: rotate(7deg); } }
+
+.lamp { animation: glow 3.5s ease-in-out infinite alternate; }
+@keyframes glow { from { opacity: 0.75; } to { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .lantern { opacity: 1; }
+}
