@@ -7,10 +7,52 @@
   "registration_required": false,
   "runs": [
    {
-    "label": "Paseo Food and Rhythm Festival",
+    "label": "Paseo Food and Rhythm Festival 2018",
     "first_date": "2018-05-03",
+    "last_date": "2018-05-18",
+    "nights": 1
+   },
+   {
+    "label": "Paseo Food and Rhythm Festival 2019",
+    "first_date": "2019-05-03",
+    "last_date": "2019-05-18",
+    "nights": 1
+   },
+   {
+    "label": "Paseo Food and Rhythm Festival 2020",
+    "first_date": "2020-05-03",
+    "last_date": "2020-05-18",
+    "nights": 1
+   },
+   {
+    "label": "Paseo Food and Rhythm Festival 2021",
+    "first_date": "2021-05-03",
+    "last_date": "2021-05-18",
+    "nights": 1
+   },
+   {
+    "label": "Paseo Food and Rhythm Festival 2022",
+    "first_date": "2022-05-03",
+    "last_date": "2022-05-18",
+    "nights": 1
+   },
+   {
+    "label": "Paseo Food and Rhythm Festival 2023",
+    "first_date": "2023-05-03",
+    "last_date": "2023-05-18",
+    "nights": 1
+   },
+   {
+    "label": "Paseo Food and Rhythm Festival 2024",
+    "first_date": "2024-05-03",
+    "last_date": "2024-05-18",
+    "nights": 1
+   },
+   {
+    "label": "Paseo Food and Rhythm Festival 2025",
+    "first_date": "2025-05-03",
     "last_date": "2025-05-18",
-    "nights": 8
+    "nights": 1
    }
   ]
  },
@@ -22,10 +64,52 @@
   "registration_required": false,
   "runs": [
    {
-    "label": "Tormenta Nights",
+    "label": "Tormenta Nights 2018",
     "first_date": "2018-10-01",
+    "last_date": "2018-10-30",
+    "nights": 1
+   },
+   {
+    "label": "Tormenta Nights 2019",
+    "first_date": "2019-10-01",
+    "last_date": "2019-10-30",
+    "nights": 1
+   },
+   {
+    "label": "Tormenta Nights 2020",
+    "first_date": "2020-10-01",
+    "last_date": "2020-10-30",
+    "nights": 1
+   },
+   {
+    "label": "Tormenta Nights 2021",
+    "first_date": "2021-10-01",
+    "last_date": "2021-10-30",
+    "nights": 1
+   },
+   {
+    "label": "Tormenta Nights 2022",
+    "first_date": "2022-10-01",
+    "last_date": "2022-10-30",
+    "nights": 1
+   },
+   {
+    "label": "Tormenta Nights 2023",
+    "first_date": "2023-10-01",
+    "last_date": "2023-10-30",
+    "nights": 1
+   },
+   {
+    "label": "Tormenta Nights 2024",
+    "first_date": "2024-10-01",
+    "last_date": "2024-10-30",
+    "nights": 1
+   },
+   {
+    "label": "Tormenta Nights 2025",
+    "first_date": "2025-10-01",
     "last_date": "2025-10-30",
-    "nights": 8
+    "nights": 1
    }
   ]
  },
@@ -37,10 +121,52 @@
   "registration_required": false,
   "runs": [
    {
-    "label": "Festival de las Linternas",
+    "label": "Festival de las Linternas 2018",
     "first_date": "2018-11-15",
+    "last_date": "2018-12-29",
+    "nights": 1
+   },
+   {
+    "label": "Festival de las Linternas 2019",
+    "first_date": "2019-11-15",
+    "last_date": "2019-12-29",
+    "nights": 1
+   },
+   {
+    "label": "Festival de las Linternas 2020",
+    "first_date": "2020-11-15",
+    "last_date": "2020-12-29",
+    "nights": 1
+   },
+   {
+    "label": "Festival de las Linternas 2021",
+    "first_date": "2021-11-15",
+    "last_date": "2021-12-29",
+    "nights": 1
+   },
+   {
+    "label": "Festival de las Linternas 2022",
+    "first_date": "2022-11-15",
+    "last_date": "2022-12-29",
+    "nights": 1
+   },
+   {
+    "label": "Festival de las Linternas 2023",
+    "first_date": "2023-11-15",
+    "last_date": "2023-12-29",
+    "nights": 1
+   },
+   {
+    "label": "Festival de las Linternas 2024",
+    "first_date": "2024-11-15",
+    "last_date": "2024-12-29",
+    "nights": 1
+   },
+   {
+    "label": "Festival de las Linternas 2025",
+    "first_date": "2025-11-15",
     "last_date": "2025-12-29",
-    "nights": 8
+    "nights": 1
    }
   ]
  },

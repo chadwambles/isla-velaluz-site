@@ -35,3 +35,15 @@ a.itemName:hover { color: var(--link); }
 .note { color: var(--muted); font-size: 0.95rem; margin-top: 1rem; }
 
 @media (max-width: 52rem) { .cols { grid-template-columns: 1fr; } }
+
+/* Index pages */
+.block { padding-block: 1.75rem; border-top: 2px solid var(--ink); }
+.block:first-child { border-top: 0; padding-top: 0; }
+.block .h2 { margin-bottom: 0.5rem; }
+.h2link { color: var(--ink); text-decoration: none; }
+a.h2link { text-decoration: underline; text-decoration-color: var(--lantern); text-decoration-thickness: 4px; text-underline-offset: 0.18em; }
+a.h2link:hover { color: var(--link); }
+.inline { list-style: none; margin: 0.9rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; }
+.inline a { color: var(--link); }
+.block .list { margin-top: 1rem; }
+.wide { max-width: 44rem; margin-top: 1.25rem; }

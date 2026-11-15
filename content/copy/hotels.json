@@ -1,10 +1,34 @@
 {
-  "casa-faroluz": {
-    "pitch": "The harbor-side hotel with the lighthouse in the window, a short walk from the Costa Encandela gate.",
-    "description": [
-      "Casa Faroluz opened a year after the first park and has been the island's classic place to stay ever since. It is a deluxe hotel of 280 rooms set around a small harbor, close enough to Costa Encandela that you can see El Faro from the upper floors.",
-      "Evenings are the point of staying here. Dinner at Keeper's Table, a drink in the Lighthouse Lounge, and the beam passing over the water every few seconds while the park goes quiet next door."
-    ],
-    "art": "harbor-hotel"
-  }
+ "palmetto-court": {
+  "pitch": "The island's value hotel: big, bright and built around its courtyards.",
+  "description": [
+   "Palmetto Court is the largest hotel at Isla Velaluz, with 640 rooms in low buildings set around palm courtyards and a main pool. It opened in 1999 and has been the first stay for a great many families.",
+   "Rooms are simple and the price is the point. The Family Bunk Room sleeps six, the food court is open from early to late, and buses leave for all three parks from the front of the hotel."
+  ],
+  "art": "palm-court"
+ },
+ "hacienda-coral": {
+  "pitch": "A moderate hotel in the style of a coastal hacienda, with a lagoon pool at its center.",
+  "description": [
+   "Hacienda Coral opened in 2005 with 460 rooms around gardens, tiled courtyards and a pool with a swim-up bar. It sits between the value and deluxe hotels in price and feels more like a resort than a place to sleep.",
+   "The Family Suite sleeps six with a separate bedroom. Hacienda Cantina, the hotel's restaurant, is good enough that guests from other hotels book it."
+  ],
+  "art": "hacienda"
+ },
+ "casa-faroluz": {
+  "pitch": "The harbor-side hotel with the lighthouse in the window, a short walk from the Costa Encandela gate.",
+  "description": [
+   "Casa Faroluz opened a year after the first park and has been the island's classic place to stay ever since. It is a deluxe hotel of 280 rooms set around a small harbor, close enough to Costa Encandela that you can see El Faro from the upper floors.",
+   "Evenings are the point of staying here. Dinner at Keeper's Table, a drink in the Lighthouse Lounge, and the beam passing over the water every few seconds while the park goes quiet next door."
+  ],
+  "art": "harbor-hotel"
+ },
+ "the-velaluz-grand": {
+  "pitch": "The island's luxury hotel: 120 rooms on the Gulf, and the best restaurant on the property.",
+  "description": [
+   "The Velaluz Grand opened in 2015 at the quiet end of the island. It is small by design. Every room faces the water, and the Velaluz Residence is a two-bedroom suite that sleeps six.",
+   "Guests come for the calm as much as the parks. Aurelia, the hotel's dining room, is the hardest reservation at Isla Velaluz, and the Grand Terrace is the best place on the island to watch the sun go down."
+  ],
+  "art": "grand-hotel"
+ }
 }

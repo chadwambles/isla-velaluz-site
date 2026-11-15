@@ -135,16 +135,29 @@ def build_resort(con, S):
         l["attractions"] = [a["slug"] for a in attractions if a["land_id"] == l["land_id"]]
         l["venues"] = [v["slug"] for v in venues if v["land_id"] == l["land_id"]]
 
+    # Event series. Concert seasons are already one series each; yearly festivals are grouped by year.
     events = rows(con, f"""
-        select event_series, any_value(event_type) event_type, any_value(location) location,
+        select event_series, year(start_date) yr, any_value(event_type) event_type, any_value(location) location,
                bool_or(registration_required) registration_required, min(start_date) first_date, max(end_date) last_date, count(*) nights
-        from '{S}/events.parquet' group by event_series order by first_date""")
+        from '{S}/events.parquet' group by event_series, year(start_date) order by first_date""")
     series = {}
     for e in events:
         base = re.sub(r"\s+(Spring|Fall)\s+\d{4}$", "", e["event_series"])
         s = series.setdefault(base, {"name": base, "slug": slugify(base), "event_type": e["event_type"], "location": e["location"],
                                      "registration_required": e["registration_required"], "runs": []})
-        s["runs"].append({"label": e["event_series"], "first_date": e["first_date"], "last_date": e["last_date"], "nights": e["nights"]})
+        label = e["event_series"] if e["event_series"] != base else f"{base} {e['yr']}"
+        s["runs"].append({"label": label, "first_date": e["first_date"], "last_date": e["last_date"], "nights": e["nights"]})
+
+    # Passes on sale today, with the price most holders paid in the latest year
+    passes = rows(con, f"""
+        select p.*, (select mode(a.price_paid) from '{S}/annual_passes.parquet' a
+                     where a.pass_product_id = p.pass_product_id and a.price_paid > 0
+                       and year(a.start_date) = (select max(year(start_date)) from '{S}/annual_passes.parquet' where pass_product_id = p.pass_product_id)) price
+        from '{S}/pass_products.parquet' p where p.sold_until is null order by price""")
+    prices = rows(con, f"""
+        select ticket_price_tier tier, min(adult_one_day_price) low, max(adult_one_day_price) high, count(*) day_count
+        from '{S}/calendar.parquet' where year = (select max(year) from '{S}/calendar.parquet') group by all order by low""")
+    write("tickets", {"passes": passes, "one_day_prices": prices})
 
     write("parks", parks)
     write("lands", lands)

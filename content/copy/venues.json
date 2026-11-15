@@ -1,16 +1,436 @@
 {
-  "faro-bakery-and-coffee": {
-    "pitch": "Pastries out of the oven from park opening, and the first coffee most guests have on the island.",
-    "description": [
-      "The bakery sits just inside the gate on the plaza, which makes it the first stop of the morning for a lot of families. Order at the counter, then find a table under the lantern strings outside.",
-      "The guava pastelitos are baked through the morning. The lantern sugar cookie is the one the kids ask for."
-    ]
-  },
-  "lighthouse-mercantile": {
-    "pitch": "The big shop on the plaza, and the last stop on the way out of the park.",
-    "description": [
-      "Lighthouse Mercantile takes up most of one side of Plaza del Faro. It carries the widest range on the island: park shirts and hats, plush, pins, and the small things people forget to pack.",
-      "It is busiest in the hour before closing. Shop in the morning and you can have your bags held at the front of the park until you leave."
-    ]
-  }
+ "lantern-cart": {
+  "pitch": "Churros, kettle corn and frozen lemonade from a cart in the middle of the plaza.",
+  "description": [
+   "The cart parks under the lantern strings near the carousel. It is the quickest snack in the park and the last one open at night."
+  ]
+ },
+ "abuelas-cocina": {
+  "pitch": "The village restaurant: enchiladas, carne asada and guacamole made at the table.",
+  "description": [
+   "Abuela's Cocina is the sit-down meal most families plan their day around. The dining room is tiled and loud in a good way, and the guacamole cart comes to you. Reservations are recommended, especially at lunch."
+  ]
+ },
+ "cuentos-toy-workshop": {
+  "pitch": "A toy shop where the shelves are low and everything can be picked up.",
+  "description": [
+   "The workshop sells plush, building sets and bubble blasters. Farol the lighthouse cat lives here, in several sizes."
+  ]
+ },
+ "churro-corner": {
+  "pitch": "A snack window on the village square, known for the obvious.",
+  "description": [
+   "Churros come out hot all day. The window also does corn dogs, nachos and frozen lemonade for anyone who is not here for the churros."
+  ]
+ },
+ "firefly-grill": {
+  "pitch": "Burgers, tenders and salads under the trees, with most of the seating in the shade.",
+  "description": [
+   "Firefly Grill is the counter-service stop in the forest. The patio lights up with the canopy after dark, which makes it a pleasant place for a late dinner."
+  ]
+ },
+ "glow-grove-gifts": {
+  "pitch": "Park shirts, hats and sweets, plus anything that glows.",
+  "description": [
+   "The shop sits at the exit of the caverns. Light-up toys sell fastest just before sunset."
+  ]
+ },
+ "the-pearl-table": {
+  "pitch": "Seafood on the lagoon, with window tables that face the evening show.",
+  "description": [
+   "The Pearl Table is the finest meal inside Costa Encandela: blackened redfish, crab cakes and lobster bisque. Book the last seating if you want to watch the Sirena Lagoon Spectacular from your table."
+  ]
+ },
+ "tidepool-treats": {
+  "pitch": "Cold drinks and quick snacks beside the splash garden.",
+  "description": [
+   "Parents tend to end up here while the kids run through the fountains. Frozen lemonade is the bestseller for a reason."
+  ]
+ },
+ "sirenas-treasures": {
+  "pitch": "Shells, sweets and souvenirs at the edge of the bay.",
+  "description": [
+   "Sirena's Treasures carries the park's shirts, hats and ponchos, and does a steady trade in dry T-shirts for people coming out of the splash garden."
+  ]
+ },
+ "smugglers-galley": {
+  "pitch": "Tacos, burrito bowls and Cuban sandwiches from the galley on the dock.",
+  "description": [
+   "The galley is the fastest lunch in Puerto Viejo. Order at the counter and eat at the long tables on the dock, where the Mercado Players sometimes wander through."
+  ]
+ },
+ "mercado-trading-post": {
+  "pitch": "The port's general store, stacked to the rafters.",
+  "description": [
+   "Shirts, hats, pins and sweets, sold from market stalls under one roof."
+  ]
+ },
+ "dockside-lemonade": {
+  "pitch": "A lemonade stand on the dock that also does churros and corn dogs.",
+  "description": [
+   "Small, fast and usually the shortest line for a cold drink on this side of the park."
+  ]
+ },
+ "starfall-diner": {
+  "pitch": "An air-conditioned diner under a ceiling of stars.",
+  "description": [
+   "Starfall Diner serves burgers, tenders, salads and mac and cheese. It is the coolest place to sit in Costa Encandela at two in the afternoon."
+  ]
+ },
+ "constellation-outfitters": {
+  "pitch": "The shop at the coaster exit, for shirts that prove you rode it.",
+  "description": [
+   "Park apparel, pins and sweets. The Constellation Coaster pin is sold here and at The Pin Exchange on the Paseo."
+  ]
+ },
+ "cloud-cones": {
+  "pitch": "Cotton candy and frozen drinks from a stand shaped like a cloud.",
+  "description": [
+   "A quick stop between rides. The cotton candy is spun to order."
+  ]
+ },
+ "pier-supply-co": {
+  "pitch": "The first and last shop in the park, right on the boardwalk.",
+  "description": [
+   "Pier Supply Co. carries Isla Velaluz shirts, hats and hoodies, along with ponchos for the water rides."
+  ]
+ },
+ "boardwalk-fry-house": {
+  "pitch": "Burgers, tenders and fries at a boardwalk counter.",
+  "description": [
+   "Classic pier food, eaten at picnic tables over the water. Watch the gulls."
+  ]
+ },
+ "squall-snacks": {
+  "pitch": "Corn dogs, nachos and cold drinks at the foot of the wheel.",
+  "description": [
+   "A snack window for people waiting on riders. Kettle corn travels well."
+  ]
+ },
+ "the-rivet-room": {
+  "pitch": "Ribs, salmon and a tower of onion rings in the old machine shop.",
+  "description": [
+   "The Rivet Room is the sit-down restaurant on the wharf, with booths, steel beams and a view of The Anvil through the windows. Reservations are recommended at dinner."
+  ]
+ },
+ "foundry-eats": {
+  "pitch": "Counter-service burgers and salads next to the dodgems.",
+  "description": [
+   "Foundry Eats is quick, indoors and close to everything on the wharf."
+  ]
+ },
+ "ironworks-gear": {
+  "pitch": "Shirts, hats and hoodies for people who just got off The Anvil.",
+  "description": [
+   "The wharf's shop stocks the full Isla Velaluz apparel line and a wall of pins."
+  ]
+ },
+ "whirlpool-tacos": {
+  "pitch": "Tacos, bowls and Cuban sandwiches steps from the water rides.",
+  "description": [
+   "Order at the window and dry off on the patio. Rice and beans come with everything."
+  ]
+ },
+ "cove-coolers": {
+  "pitch": "Frozen lemonade and snacks at the exit of the rapids.",
+  "description": [
+   "The stand does its best business with people who are soaked and happy about it."
+  ]
+ },
+ "nimbus-noodle-bar": {
+  "pitch": "Ramen, dan dan noodles and bao on the ridge.",
+  "description": [
+   "Nimbus Noodle Bar is the most unusual counter in the park and one of the most popular. Bowls come out fast, and the terrace looks down over the coasters."
+  ]
+ },
+ "skybreak-outfitters": {
+  "pitch": "The ridge-top shop for shirts, hoodies and pins.",
+  "description": [
+   "Skybreak Outfitters carries Isla Velaluz apparel and the pins for the rides up here."
+  ]
+ },
+ "updraft-pretzels": {
+  "pitch": "Snacks and cold drinks between the towers.",
+  "description": [
+   "A stand for the gap between rides. The line is rarely more than a few people."
+  ]
+ },
+ "trueno-cantina": {
+  "pitch": "Carne asada, fish tacos and tableside guacamole inside the research station.",
+  "description": [
+   "Trueno Cantina is the sit-down restaurant in Cabo Trueno. The windows look out at the storm wall, and the room rumbles now and then. Reservations fill early in the day."
+  ]
+ },
+ "cabo-street-kitchen": {
+  "pitch": "Tacos, burrito bowls and plantain chips from a counter in the outpost.",
+  "description": [
+   "The quick option in Cabo Trueno, with covered seating that stays dry when the weather turns."
+  ]
+ },
+ "tormenta-traders": {
+  "pitch": "The outpost's supply store: shirts, hats, pins and ponchos.",
+  "description": [
+   "Tormenta Traders sits at the exit of Trueno Rally and carries the Isla Velaluz line."
+  ]
+ },
+ "thunder-ice": {
+  "pitch": "Frozen lemonade and snacks at the edge of the storm.",
+  "description": [
+   "A stand near the coaster entrance. Frozen drinks sell out on the hottest afternoons."
+  ]
+ },
+ "tortuga-beach-shack": {
+  "pitch": "Burgers, tenders and fries, served to people in swimsuits.",
+  "description": [
+   "The Beach Shack is the main place to eat at the water park. Order at the window and carry your tray back to the sand."
+  ]
+ },
+ "reef-bar": {
+  "pitch": "Margaritas, cold beer and virgin coladas with your feet in the sand.",
+  "description": [
+   "Reef Bar faces the wave bay. It serves nachos and chips with queso alongside the drinks, and soft drinks for the kids."
+  ]
+ },
+ "shell-shop": {
+  "pitch": "Sunscreen, flip-flops, goggles and whatever else got left at the hotel.",
+  "description": [
+   "The Shell Shop is the water park's only store. It also sells Isla Velaluz shirts and hats."
+  ]
+ },
+ "caracol-snack-hut": {
+  "pitch": "Snacks and drinks within sight of the kids' pools.",
+  "description": [
+   "The hut is placed so a parent can buy a churro without losing sight of the cove."
+  ]
+ },
+ "monsoon-grill": {
+  "pitch": "Tacos and burrito bowls at the foot of the ridge.",
+  "description": [
+   "Monsoon Grill is the quieter of the water park's two lunch counters, with shaded tables and a view of the slides."
+  ]
+ },
+ "palmetto-food-court": {
+  "pitch": "A big, bright food court that feeds the whole hotel.",
+  "description": [
+   "Burgers, tenders, salads and kids' meals, open from breakfast to late. Families staying at Palmetto Court eat here most mornings before the buses leave."
+  ]
+ },
+ "palmetto-pool-bar": {
+  "pitch": "Poolside drinks and bar snacks in the main courtyard.",
+  "description": [
+   "The pool bar serves margaritas, draft beer and virgin coladas, with nachos and fish dip for the table."
+  ]
+ },
+ "court-sundries": {
+  "pitch": "The hotel shop for snacks, shirts and forgotten toothbrushes.",
+  "description": [
+   "Court Sundries stocks Isla Velaluz apparel and sweets along with the basics."
+  ]
+ },
+ "hacienda-cantina": {
+  "pitch": "The hotel's restaurant, built around a courtyard fountain.",
+  "description": [
+   "Hacienda Cantina serves carne asada, enchiladas and fish tacos at real tables. It is open to everyone, not only hotel guests, and takes reservations."
+  ]
+ },
+ "coral-cafe": {
+  "pitch": "Coffee, pastries and breakfast burritos off the lobby.",
+  "description": [
+   "Coral Cafe opens early for people catching the first bus to the parks and stays open through the afternoon."
+  ]
+ },
+ "coral-cove-pool-bar": {
+  "pitch": "A swim-up bar in the hotel's lagoon pool.",
+  "description": [
+   "Cold drinks, bar snacks and a row of stools in the water."
+  ]
+ },
+ "hacienda-mercado": {
+  "pitch": "A small market in the lobby for gifts and essentials.",
+  "description": [
+   "The Mercado carries park apparel, sweets and the things you forgot to pack."
+  ]
+ },
+ "keepers-table": {
+  "pitch": "The hotel's dining room: Gulf seafood with the lighthouse in the window.",
+  "description": [
+   "Keeper's Table serves blackened redfish, crab cakes and citrus roasted chicken in a room that faces the harbor. Dinner reservations are recommended, and the window tables go first."
+  ]
+ },
+ "faro-coffee-bar": {
+  "pitch": "Coffee, pastries and avocado toast beside the lobby.",
+  "description": [
+   "The coffee bar is where the hotel wakes up. Order at the counter and take it out to the harbor wall."
+  ]
+ },
+ "lighthouse-lounge": {
+  "pitch": "A quiet bar with a view of the beam.",
+  "description": [
+   "The lounge pours cocktails, wine and draft beer and serves a short menu of bar snacks. It is busiest in the hour after the park closes."
+  ]
+ },
+ "casa-boutique": {
+  "pitch": "The hotel's shop, for gifts a little nicer than a park shirt.",
+  "description": [
+   "Casa Boutique carries Isla Velaluz apparel and sweets, chosen with the hotel's guests in mind."
+  ]
+ },
+ "aurelia": {
+  "pitch": "The finest table on the island.",
+  "description": [
+   "Aurelia is the signature restaurant of The Velaluz Grand: butter poached lobster, day boat halibut and duck breast with guava, served in a dining room over the water. Reservations are essential."
+  ]
+ },
+ "the-grand-terrace": {
+  "pitch": "Cocktails on the terrace, facing the sunset.",
+  "description": [
+   "The Grand Terrace is the hotel's bar, open to the Gulf on three sides. Go for the hour before dusk."
+  ]
+ },
+ "grand-pantry": {
+  "pitch": "Coffee, pastries and light breakfast for guests of the Grand.",
+  "description": [
+   "The Pantry is small and calm, with good coffee and a breakfast burrito that people talk about."
+  ]
+ },
+ "velaluz-atelier": {
+  "pitch": "Jewelry and keepsakes, in a shop the size of a walk-in closet.",
+  "description": [
+   "The Atelier sells charm bracelets, cufflinks and a bead kit for younger guests."
+  ]
+ },
+ "marea-alta": {
+  "pitch": "The Paseo's seafood house, on the waterfront end of the promenade.",
+  "description": [
+   "Marea Alta serves blackened redfish, crab cakes and lobster bisque with the doors open to the Gulf. It is the most popular dinner reservation on the Paseo."
+  ]
+ },
+ "brasa-y-sal": {
+  "pitch": "Ribs, grilled salmon and big plates from a wood-fired kitchen.",
+  "description": [
+   "Brasa y Sal is the steakhouse-style restaurant on the Paseo, good for groups and loud birthdays."
+  ]
+ },
+ "nonna-lucias": {
+  "pitch": "Red-sauce Italian: chicken parmesan, fettuccine and fried calamari.",
+  "description": [
+   "Nonna Lucia's is the family favorite on the Paseo. Portions are large and the bruschetta comes out before you have finished ordering."
+  ]
+ },
+ "paseo-cantina": {
+  "pitch": "Carne asada, enchiladas and guacamole made at the table.",
+  "description": [
+   "Paseo Cantina has the biggest patio on the promenade and a long list of margaritas."
+  ]
+ },
+ "lantern-house": {
+  "pitch": "Katsu curry, bulgogi bowls and miso salmon under paper lanterns.",
+  "description": [
+   "Lantern House is the Paseo's Asian kitchen. The dumplings are made in view of the dining room."
+  ]
+ },
+ "gulf-coast-burger-works": {
+  "pitch": "Burgers, tenders and mac and cheese, fast.",
+  "description": [
+   "The counter-service burger spot on the Paseo, open late."
+  ]
+ },
+ "pollo-dorado": {
+  "pitch": "Tacos, burrito bowls and Cuban sandwiches at a walk-up counter.",
+  "description": [
+   "Pollo Dorado is the quick, inexpensive dinner on the Paseo. Plantain chips come on the side."
+  ]
+ },
+ "dulce-paseo": {
+  "pitch": "The Paseo's bakery and coffee shop.",
+  "description": [
+   "Dulce Paseo sells pastries, empanadas and cafe con leche from morning until the shops close."
+  ]
+ },
+ "the-salt-line": {
+  "pitch": "A cocktail bar with a long counter and a short menu.",
+  "description": [
+   "The Salt Line is the place for a drink before dinner. Fish dip and chips is the thing to order with it."
+  ]
+ },
+ "rum-dock": {
+  "pitch": "An open-air bar at the end of the dock.",
+  "description": [
+   "Rum Dock pours margaritas, draft beer and frozen drinks, with live music on concert nights."
+  ]
+ },
+ "velaluz-marketplace": {
+  "pitch": "The biggest shop on the island, with something from every park.",
+  "description": [
+   "Velaluz Marketplace is the place to buy what you talked yourself out of earlier in the trip. It carries apparel, toys, pins, sweets and home goods under one roof."
+  ]
+ },
+ "coastal-thread-co": {
+  "pitch": "Shirts, hoodies and hats, and only that.",
+  "description": [
+   "Coastal Thread Co. stocks the full range of park apparel in every size."
+  ]
+ },
+ "brinewood-home": {
+  "pitch": "Beach towels, kitchen goods and ornaments for the house.",
+  "description": [
+   "Brinewood Home sells the souvenirs that end up being used: mugs, towels, picture books and holiday ornaments."
+  ]
+ },
+ "tidal-toys": {
+  "pitch": "The Paseo's toy store.",
+  "description": [
+   "Plush, building sets and bubble blasters, with Farol the lighthouse cat in the window."
+  ]
+ },
+ "sugar-reef-candy": {
+  "pitch": "Fudge, caramel corn and chocolate sea shells.",
+  "description": [
+   "Sugar Reef makes its fudge in the shop and hands out samples at the door."
+  ]
+ },
+ "faro-jewelers": {
+  "pitch": "Charm bracelets, cufflinks and small things in small boxes.",
+  "description": [
+   "Faro Jewelers is the Paseo's jewelry counter, with a bead kit for kids."
+  ]
+ },
+ "paseo-surf-and-sport": {
+  "pitch": "Board shorts, flip-flops and gear for the beach.",
+  "description": [
+   "Paseo Surf & Sport outfits people on their way to the water park, and carries Isla Velaluz apparel as well."
+  ]
+ },
+ "the-pin-exchange": {
+  "pitch": "Every collectible pin on the island, in one small shop.",
+  "description": [
+   "The Pin Exchange sells the pins for El Faro, El Remolino, Constellation Coaster and the rest. Collectors trade at the counter."
+  ]
+ },
+ "paseo-kettle-corn": {
+  "pitch": "Kettle corn popped on the promenade.",
+  "description": [
+   "You will smell it before you see it. The stand also sells churros, corn dogs and cold drinks."
+  ]
+ },
+ "limonada-stand": {
+  "pitch": "Frozen lemonade and quick snacks on the Paseo.",
+  "description": [
+   "A walk-up stand for a cold drink between shops."
+  ]
+ },
+ "faro-bakery-and-coffee": {
+  "pitch": "Pastries out of the oven from park opening, and the first coffee most guests have on the island.",
+  "description": [
+   "The bakery sits just inside the gate on the plaza, which makes it the first stop of the morning for a lot of families. Order at the counter, then find a table under the lantern strings outside.",
+   "The guava pastelitos are baked through the morning. The lantern sugar cookie is the one the kids ask for."
+  ]
+ },
+ "lighthouse-mercantile": {
+  "pitch": "The big shop on the plaza, and the last stop on the way out of the park.",
+  "description": [
+   "Lighthouse Mercantile takes up most of one side of Plaza del Faro. It carries the widest range on the island: park shirts and hats, plush, pins, and the small things people forget to pack.",
+   "It is busiest in the hour before closing. Shop in the morning and you can have your bags held at the front of the park until you leave."
+  ]
+ }
 }

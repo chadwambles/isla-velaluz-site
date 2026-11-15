@@ -23,7 +23,7 @@ export default function Home() {
 
       <section className={styles.band}>
         <div className="wrap">
-          <h2 className={styles.h2}>Three parks, one island</h2>
+          <h2 className={styles.h2}><Link href="/parks/" className={s.h2link}>Three parks, one island</Link></h2>
           <ul className={s.list}>
             {parks.map((p) => {
               const nLands = lands.filter((l) => l.park_code === p.park_code).length;
@@ -31,9 +31,8 @@ export default function Home() {
               return (
                 <li key={p.slug} className={s.item}>
                   <MaybeLink to={href.park(p)} when={p.published} className={s.itemName}>{p.park_name}</MaybeLink>
-                  <p className={s.itemMeta}>
-                    {p.park_type === 'water' ? 'Water park' : 'Theme park'}, open since {year(p.opened_date)}. {nLands} lands and {nRides} attractions.
-                  </p>
+                  <p className={s.itemMeta}>{p.pitch}</p>
+                  <p className={s.itemMeta}>{nLands} lands and {nRides} attractions. Open since {year(p.opened_date)}.</p>
                 </li>
               );
             })}
@@ -41,7 +40,7 @@ export default function Home() {
 
           <div className={styles.split}>
             <div>
-              <h2 className={styles.h2}>Four places to stay</h2>
+              <h2 className={styles.h2}><Link href="/hotels/" className={s.h2link}>Four places to stay</Link></h2>
               <ul className={`${s.list} ${styles.hotels}`}>
                 {hotels.map((h) => (
                   <li key={h.slug} className={s.item}>

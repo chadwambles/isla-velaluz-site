@@ -1,6 +1,15 @@
 import Link from 'next/link';
 import styles from './SiteHeader.module.css';
 
+const RESORT = [
+  ['Parks', '/parks/'],
+  ['Hotels', '/hotels/'],
+  ['Dining', '/dining/'],
+  ['Shopping', '/shopping/'],
+  ['Events', '/events/'],
+  ['Tickets', '/tickets/'],
+];
+
 export default function SiteHeader({ theme }) {
   const inData = theme === 'chart';
   return (
@@ -18,10 +27,10 @@ export default function SiteHeader({ theme }) {
         </Link>
         <nav aria-label="Main">
           <ul className={styles.nav}>
-            <li>
-              <Link href="/" aria-current={inData ? undefined : 'page'}>The resort</Link>
-            </li>
-            <li>
+            {RESORT.map(([label, to]) => (
+              <li key={to} className={inData ? styles.quiet : undefined}><Link href={to}>{label}</Link></li>
+            ))}
+            <li className={styles.data}>
               <Link href="/data/" aria-current={inData ? 'page' : undefined}>Data Center</Link>
             </li>
           </ul>

@@ -1,10 +1,122 @@
 {
-  "plaza-del-faro": {
-    "pitch": "The front door of the park: a lantern-strung square with the lighthouse at the far end.",
-    "description": [
-      "Every visit to Costa Encandela starts and ends in Plaza del Faro. The square runs from the front gate to the foot of El Faro, with the bakery on one side, the mercantile on the other and a carousel under cover for hot afternoons.",
-      "It is the best place in the park to be at closing time. The lanterns come on across the square, the theater lets out, and the lighthouse beam starts its sweep over the water."
-    ],
-    "art": "lighthouse-plaza"
-  }
+ "plaza-del-faro": {
+  "pitch": "The front door of the park: a lantern-strung square with the lighthouse at the far end.",
+  "description": [
+   "Every visit to Costa Encandela starts and ends in Plaza del Faro. The square runs from the front gate to the foot of El Faro, with the bakery on one side, the mercantile on the other and a carousel under cover for hot afternoons.",
+   "It is the best place in the park to be at closing time. The lanterns come on across the square, the theater lets out, and the lighthouse beam starts its sweep over the water."
+  ],
+  "art": "lighthouse-plaza"
+ },
+ "villa-cuentos": {
+  "pitch": "A village of folk tales, built at a child's scale and unhurried on purpose.",
+  "description": [
+   "Villa Cuentos is where the park keeps its oldest stories. The streets are narrow, the rooftops lean, and nearly everything here can be ridden by a three-year-old sitting next to a grandparent.",
+   "The Lantern Keeper's Tale is the ride most families start with. After that it is kites, skiffs and a puppet show, and a long lunch at Abuela's Cocina if you booked a table."
+  ],
+  "art": "village"
+ },
+ "bosque-luminoso": {
+  "pitch": "A forest that glows after dark, and looks like a different place once the sun goes down.",
+  "description": [
+   "Bosque Luminoso was the park's first expansion, added in 2001 on what had been a stand of live oaks behind the village. By day it is the shadiest corner of Costa Encandela. By night the canopy lights up in slow waves.",
+   "Firefly Flight is the first coaster for a lot of young riders. Glowworm Caverns is the place to cool off, and the Lumina Grove Walk is worth doing twice, once in daylight and once after dusk."
+  ],
+  "art": "glow-forest"
+ },
+ "bahia-de-sirenas": {
+  "pitch": "The mermaid bay: a lagoon, a splash garden and the park's evening show on the water.",
+  "description": [
+   "Bahia de Sirenas wraps around a shallow lagoon on the Gulf side of the park. Song of the Sirena has been here since opening day, and the splash garden and spinner were added in 2007 for families who wanted to get wet without leaving for the water park.",
+   "Plan to be here late in the day. The Sirena Lagoon Spectacular is performed on the water, and the tables at The Pearl Table look straight across it."
+  ],
+  "art": "lagoon"
+ },
+ "puerto-viejo": {
+  "pitch": "An old port town of crooked docks, market stalls and the park's first real thrills.",
+  "description": [
+   "Puerto Viejo opened in 1998, two years after the park, and gave Costa Encandela something for older kids. Galleon Run and Smugglers' Tide both ask for a little height and a little nerve, which made them a rite of passage on the island.",
+   "The market square in the middle is always noisy. The Mercado Players perform there through the afternoon, and Smugglers' Galley keeps the line moving at lunch."
+  ],
+  "art": "old-port"
+ },
+ "cielo-alto": {
+  "pitch": "The newest corner of the park, set among the stars and almost entirely indoors.",
+  "description": [
+   "Cielo Alto opened in 2012 as the park's answer to rainy afternoons. Two of its three rides are under a roof, including Constellation Coaster, which is the most intense ride in Costa Encandela and runs in the dark.",
+   "It sits at the far end of the park from the gate, so it is quietest first thing in the morning. Starfall Diner is the easiest place in the park to find a seat in the air conditioning."
+  ],
+  "art": "star-dome"
+ },
+ "stormwatch-pier": {
+  "pitch": "A working-pier boardwalk at the park gate, with a wheel, swings and the smell of fried food.",
+  "description": [
+   "Stormwatch Pier is the entrance to Punta Tormenta and the calmest part of it. The boardwalk runs out over the water past the swings and the Pier Wheel, and the stunt show arena sits at the end.",
+   "This is where groups split up and meet again. Riders head inland to the coasters, and everyone else can see most of the park from the top of the wheel."
+  ],
+  "art": "pier"
+ },
+ "ironworks-wharf": {
+  "pitch": "A shipyard of cranes and rivets, where the rides are loud and the height requirements are real.",
+  "description": [
+   "Ironworks Wharf is one of the three original lands of Punta Tormenta and still the one that sets its tone. The Anvil drops from the tallest structure in the park, and Cargo Crane Chaos swings riders out over the walkway.",
+   "Riptide Racer joined in 2009 and brought a second coaster to the wharf. When you need to sit down, The Rivet Room serves ribs and salmon at real tables, and Foundry Dodgems is indoors."
+  ],
+  "art": "shipyard"
+ },
+ "remolino-cove": {
+  "pitch": "The cove at the heart of the park, where everything spins, soaks or both.",
+  "description": [
+   "Remolino Cove is built around El Remolino, the coaster that opened with the park in 2004 and is still the ride most people picture when they think of Punta Tormenta. The two water rides beside it will get you wet, and on a hot day that is the point.",
+   "Bring a change of shirt or ride the rapids last. Whirlpool Tacos is a few steps from the exit of all three."
+  ],
+  "art": "whirl-coaster"
+ },
+ "skybreak-heights": {
+  "pitch": "The high ground: four rides built for height, speed and people who like both.",
+  "description": [
+   "Skybreak Heights opened in 2014 on the ridge at the back of the park. Nimbus Peak is the tallest coaster on the island, and Updraft and Windshear stand on either side of it.",
+   "Squall Line was added in 2017 so that younger riders had a coaster of their own up here. Every ride in this land is outdoors, so check the sky before you make the climb."
+  ],
+  "art": "ridge-towers"
+ },
+ "cabo-trueno": {
+  "pitch": "The storm chasers' outpost, and the newest land on the island.",
+  "description": [
+   "Cabo Trueno opened in May 2021 and was the largest addition in the park's history. Its story is a research station at the edge of a permanent storm, and Ojo de la Tormenta, the coaster at its center, flies straight through the eye.",
+   "It is not only for thrill riders. Trueno Rally is indoors and open to anyone 40 inches or taller, and Tempest Trackers is a gentle family ride. Trueno Cantina takes reservations and fills up early."
+  ],
+  "art": "storm-outpost"
+ },
+ "tortuga-beach": {
+  "pitch": "The wide sandy middle of the water park, with the wave bay on one side and the river all around.",
+  "description": [
+   "Tortuga Beach is where most families set up for the day at Playa Zambulla. Marea Wave Bay runs its waves on a cycle, and Rio Perezoso loops the whole land at about the speed of a slow walk.",
+   "Chairs go early on weekends. Reef Bar and the Beach Shack are both a short walk from the sand, and neither needs shoes."
+  ],
+  "art": "wave-beach"
+ },
+ "arrecife-slides": {
+  "pitch": "The slide tower: four ways down, from fast to very fast.",
+  "description": [
+   "Arrecife Slides is a single tower with four slides coming off it. Eel Tubes and Mantaray Racers are the place to start. Barracuda Bowl and Coral Plunge are for riders who are 48 inches or taller and sure about it.",
+   "There is nowhere to eat in this land, by design. The stairs are the workout, and Tortuga Beach is right at the bottom."
+  ],
+  "art": "slide-tower"
+ },
+ "caracol-kids-cove": {
+  "pitch": "Shallow water, small slides and nothing a toddler cannot do.",
+  "description": [
+   "Caracol Kids Cove is fenced, shaded and never more than knee deep. Hatchling Harbor is the play structure with the tipping bucket, and Little Tides is the calm pool for the smallest swimmers.",
+   "There is no height requirement anywhere in the cove. Parents can see the whole land from the chairs along the edge."
+  ],
+  "art": "kids-cove"
+ },
+ "monsoon-ridge": {
+  "pitch": "The 2016 expansion on the hill: three big slides and the best view in the water park.",
+  "description": [
+   "Monsoon Ridge added a second slide complex to Playa Zambulla, built into the rise at the back of the park. Monzon is a family raft slide that takes groups down together. Cliffdiver is a near-vertical body slide and the most intense ride in the water park.",
+   "Twin Squalls runs two tube slides side by side. Monsoon Grill is at the base of the hill, and it is the quieter of the park's two places for lunch."
+  ],
+  "art": "ridge-slides"
+ }
 }
