@@ -17,3 +17,8 @@
 .note { margin-top: 2rem; padding: 0.9rem 1.1rem; background: var(--land); border-left: 4px solid var(--brass); max-width: 54rem; }
 
 .by { margin-top: 1.5rem; color: var(--muted); }
+.doors { list-style: none; margin: 2.75rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; max-width: 60rem; }
+.door { display: grid; gap: 0.4rem; height: 100%; padding: 1.1rem 1.2rem 1.25rem; background: var(--paper); border: 1.5px solid var(--navy); color: var(--navy); text-decoration: none; box-shadow: 4px 4px 0 var(--shoal); }
+.door:hover { box-shadow: 4px 4px 0 var(--rose); }
+.doorName { font-family: var(--font-display); font-size: 1.6rem; }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 1rem 2.5rem; max-width: 60rem; }

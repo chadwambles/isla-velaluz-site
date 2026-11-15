@@ -1,13 +1,15 @@
-import styles from './data.module.css';
 import Link from 'next/link';
+import styles from './data.module.css';
+import c from './chart.module.css';
 import { KAGGLE_URL, AUTHOR_URL } from '@/components/links';
+import { tables, AREAS } from '@/lib/content';
 
 export const metadata = { title: { absolute: 'Isla Velaluz Data Center' } };
 
-const sizes = [
-  ['Sample', '1% of households', '11.9M rows', 'Fits in Excel-sized tools and a laptop notebook'],
-  ['Standard', '10% of households', '35.1M rows', 'Enough volume for real SQL and dashboard work'],
-  ['Full', 'Every household', '266.9M rows', 'The whole company, for DuckDB or a warehouse'],
+const DOORS = [
+  ['/data/tables/', 'Tables', 'All 64 tables with their columns, how they connect and their first five rows.'],
+  ['/data/questions/', 'Questions', 'Thirty business questions with real answers in the data, and twelve open projects.'],
+  ['/data/downloads/', 'Downloads', 'Three sizes, Parquet or CSV, with the few lines of code that load them.'],
 ];
 
 export default function DataHome() {
@@ -22,35 +24,52 @@ export default function DataHome() {
         <a className={styles.primary} href={KAGGLE_URL}>Download from Kaggle</a>
       </p>
 
-      <h2 className={styles.h2}>Three sizes, same tables</h2>
-      <div className={styles.tableScroll}>
-        <table className={styles.table}>
-          <thead>
-            <tr><th scope="col">Size</th><th scope="col">Guests included</th><th scope="col">Rows</th><th scope="col">Good for</th></tr>
-          </thead>
+      <ul className={styles.doors}>
+        {DOORS.map(([to, name, text]) => (
+          <li key={to}>
+            <Link href={to} className={styles.door}>
+              <span className={styles.doorName}>{name}</span>
+              <span>{text}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      <h2 className={styles.h2}>Why it is useful for a portfolio</h2>
+      <div className={styles.cols}>
+        <p>
+          It was made by simulating the company, not by filling tables with random values. A guest who rides a coaster
+          was in that park, on that day, with a valid ticket. The cashier who sold them lunch was on shift at that venue.
+          The ingredients came off a purchase order and out of that day&apos;s inventory, and the sale is in the general ledger.
+        </p>
+        <p>
+          That means joins work, totals reconcile, and the questions have answers that are not obvious from a single table.
+          It looks like real work because it behaves like a real company.
+        </p>
+      </div>
+
+      <h2 className={styles.h2}>What is inside</h2>
+      <div className={c.scroll} tabIndex={0} role="region" aria-label="Business areas">
+        <table className={c.table}>
+          <thead><tr><th scope="col">Area</th><th scope="col" className={c.right}>Tables</th><th scope="col">Includes</th></tr></thead>
           <tbody>
-            {sizes.map(([name, share, rows, use]) => (
-              <tr key={name}>
-                <th scope="row">{name}</th><td>{share}</td><td className={styles.num}>{rows}</td><td>{use}</td>
-              </tr>
-            ))}
+            {AREAS.map((a) => {
+              const list = tables.filter((t) => t.area === a);
+              return (
+                <tr key={a}>
+                  <th scope="row"><Link href={`/data/tables/#${a.toLowerCase().replace(/[^a-z]+/g, '-')}`}>{a}</Link></th>
+                  <td className={`${c.num} ${c.right}`}>{list.length}</td>
+                  <td className={c.code}>{list.slice(0, 5).map((t) => t.name).join(', ')}{list.length > 5 ? ` and ${list.length - 5} more` : ''}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
 
-      <h2 className={styles.h2}>See what a table looks like</h2>
-      <p>
-        Every table has a page with its columns, how it connects to the others, and its first five rows. Start with{' '}
-        <Link href="/data/tables/bookings/">bookings</Link>, the table most questions pass through.
-      </p>
-
-      <p className={styles.note}>
-        The full table index, the question list and loading instructions are being added to this section. Until then,
-        all three are in the Kaggle download.
-      </p>
       <p className={styles.by}>
         Built by <a href={AUTHOR_URL}>Chad Wambles</a>, a business analyst who wanted a practice company with real joins
-        and real answers.
+        and real answers. The resort it describes has its own website: <Link href="/">take a look around</Link>.
       </p>
     </div>
   );

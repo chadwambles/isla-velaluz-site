@@ -35,7 +35,7 @@ pip install duckdb
 python tools/build_content.py --data "C:/path/to/isla-velaluz-kaggle"
 ```
 
-The folder must hold `sample/`, `DATA_DICTIONARY.md` and `data_dictionary.csv` (the Kaggle download has all three).
+The folder must hold `sample/`, `DATA_DICTIONARY.md`, `data_dictionary.csv` and `QUESTIONS.md` (the Kaggle download has all four).
 Commit the changed JSON. The website build itself never needs Python or the dataset.
 
 ## Deploy

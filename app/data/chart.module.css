@@ -36,3 +36,27 @@
 .primary:hover { background: var(--rose); }
 
 @media (max-width: 40rem) { .stats div { border-right: 0; border-bottom: 1px solid var(--rule); width: 100%; } .stats div:last-child { border-bottom: 0; } }
+
+/* Index, questions and downloads */
+.title { font-size: clamp(2rem, 4.6vw, 3.4rem); max-width: 20ch; }
+.right { text-align: right !important; }
+.jump { list-style: none; display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; margin: 1.5rem 0 0; padding: 0; }
+.callout { margin-top: 2rem; padding: 1rem 1.2rem; background: var(--land); border-left: 4px solid var(--brass); max-width: 62rem; }
+.callout p { max-width: 78ch; }
+
+.questions { margin: 0; padding: 0 0 0 2.6rem; max-width: 62rem; }
+.questions li { padding: 1.25rem 0 1.4rem; border-top: 1px solid var(--rule); }
+.questions li:first-child { border-top: 1.5px solid var(--navy); }
+.questions li::marker { font-family: var(--font-display); font-size: 1.6rem; color: var(--rose); }
+.qTitle { font-size: 1.45rem; margin-bottom: 0.5rem; }
+.questions p { max-width: 72ch; }
+.asked { font-weight: 600; }
+.qMeta { display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; margin: 0.9rem 0 0; font-size: 0.95rem; }
+.qMeta div { display: flex; gap: 0.5rem; }
+.qMeta dt { color: var(--muted); }
+.qMeta dd { margin: 0; }
+
+.projects { margin: 0.75rem 0 0; padding-left: 1.2rem; max-width: 72ch; }
+.projects li + li { margin-top: 0.6rem; }
+.pre { background: var(--navy); color: var(--paper); padding: 1rem 1.2rem; overflow-x: auto; font-family: var(--font-code); font-size: 0.88rem; line-height: 1.6; max-width: 62rem; margin: 0 0 1.5rem; border-radius: 3px; }
+.page section[id] { scroll-margin-top: 1rem; }

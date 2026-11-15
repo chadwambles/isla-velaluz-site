@@ -28,7 +28,7 @@ export default async function TablePage({ params }) {
       <nav aria-label="Breadcrumb">
         <ol className={c.crumbs}>
           <li><Link href="/data/">Data Center</Link></li>
-          <li>{t.area}</li>
+          <li><Link href={`/data/tables/#${t.area.toLowerCase().replace(/[^a-z]+/g, '-')}`}>{t.area}</Link></li>
         </ol>
       </nav>
       <h1 className={c.tableName}>{t.name}</h1>
@@ -46,7 +46,7 @@ export default async function TablePage({ params }) {
       )}
 
       <h2 className={c.h2}>Columns</h2>
-      <div className={c.scroll}>
+      <div className={c.scroll} tabIndex={0} role="region" aria-label="Columns">
         <table className={c.table}>
           <thead>
             <tr><th scope="col">Column</th><th scope="col">Type</th><th scope="col">What it holds</th><th scope="col">Values or range</th></tr>
@@ -102,7 +102,7 @@ export default async function TablePage({ params }) {
 
       <h2 className={c.h2}>First five rows</h2>
       <p className={c.small}>Taken from the Sample size, exactly as they appear in the file. Empty cells are empty in the data.</p>
-      <div className={c.scroll}>
+      <div className={c.scroll} tabIndex={0} role="region" aria-label="First five rows">
         <table className={`${c.table} ${c.rows}`}>
           <thead><tr>{cols.map((n) => <th key={n} scope="col" className={c.code}>{n}</th>)}</tr></thead>
           <tbody>

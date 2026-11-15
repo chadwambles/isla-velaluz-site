@@ -208,9 +208,40 @@ def build_dictionary(con, S, data):
     write("tables", tables)
 
 
+def build_questions(data):
+    """Parse QUESTIONS.md into themes, questions and open projects."""
+    md = (data / "QUESTIONS.md").read_text(encoding="utf-8")
+    themes, current = [], None
+    blocks = re.split(r"\n(?=## |\*\*\d+\. )", md)
+    for b in blocks:
+        b = b.strip()
+        if b.startswith("## "):
+            title = b.splitlines()[0][3:].strip()
+            if title in ("How to read each entry", "Open projects", "If you publish what you find"):
+                current = None
+                continue
+            current = {"theme": title, "questions": []}
+            themes.append(current)
+            continue
+        m = re.match(r"\*\*(\d+)\. (.+?)\*\*\n(.+)", b, re.S)
+        if not m or current is None:
+            continue
+        number, title, rest = int(m.group(1)), m.group(2), " ".join(m.group(3).split())
+        q = re.match(r"Asked by: (.+?)\. (.*?)\s*Start with: (.+?)\. Skills: (.+?)\. Size: (.+?)\. Level: (\d)\.", rest)
+        if not q:
+            raise SystemExit(f"Could not parse question {number}")
+        current["questions"].append({
+            "number": number, "title": title, "asked_by": q.group(1), "body": q.group(2).strip(),
+            "start_with": [t.strip() for t in q.group(3).split(",")], "skills": q.group(4), "size": q.group(5), "level": int(q.group(6))})
+    themes = [t for t in themes if t["questions"]]
+    projects = [{"name": n, "body": " ".join(body.split())}
+                for n, body in re.findall(r"^- \*\*(.+?)\.\*\* (.+?)(?=\n- \*\*|\n\n)", md.split("## Open projects")[1], re.S | re.M)]
+    write("questions", {"themes": themes, "projects": projects})
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--data", required=True, help="Folder holding sample/, DATA_DICTIONARY.md and data_dictionary.csv")
+    ap.add_argument("--data", required=True, help="Folder holding sample/, DATA_DICTIONARY.md, data_dictionary.csv and QUESTIONS.md")
     args = ap.parse_args()
     data = Path(args.data)
     S = data / "sample"
@@ -218,6 +249,7 @@ def main():
     print("Writing content/")
     build_resort(con, S.as_posix())
     build_dictionary(con, S, data)
+    build_questions(data)
 
 
 if __name__ == "__main__":

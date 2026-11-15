@@ -28,3 +28,5 @@
   .bar { flex-direction: column; align-items: flex-start; gap: 0.6rem; }
   .nav { justify-content: flex-start; gap: 0.15rem 1.1rem; }
 }
+
+.sub { font-family: var(--font-body); font-size: 0.95rem; font-weight: 600; margin-left: 0.35rem; color: var(--rose); }
