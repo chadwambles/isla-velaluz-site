@@ -47,3 +47,6 @@ gate loses its `noindex`, or if an internal link is broken. No answers live in t
 ## Deploy
 
 Vercel builds and publishes on every push to `main`. Framework preset: Next.js. No environment variables.
+
+When the custom domain is attached, change `SITE_URL` in `components/links.js` to the new address and push. That one
+value feeds the sitemap, `robots.txt` and the social preview image links.

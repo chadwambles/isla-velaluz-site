@@ -381,22 +381,52 @@ const MOTIFS = {
   ),
   'slide-tower': () => (
     <>
-      <Ground />
-      <SlideTower x={1060} h={250} flumes={3} />
-      <Palm x={1350} h={96} /><Palm x={640} h={72} flip />
-      <Umbrella x={180} /><Umbrella x={270} />
-      <path d={`M700 ${BASE} H1300 V352 H700Z`} fill="url(#v-sea)" />
+      <path d={`M560 ${BASE - 2} H1440 V424 H560Z`} fill="url(#v-sea)" />
+      <Ground d={`M0 ${BASE} H600 C640 350 660 380 680 420 H0Z`} />
+      <g fill={INK}>
+        <rect x="1010" y="96" width="14" height="250" /><rect x="1096" y="96" width="14" height="250" />
+        <rect x="992" y="96" width="136" height="12" /><rect x="992" y="170" width="136" height="10" /><rect x="992" y="244" width="136" height="10" />
+        <path d="M982 96 H1138 L1060 52Z" /><rect x="1056" y="30" width="6" height="26" /><path d="M1062 30 l26 8 l-26 8z" fill={GLOW} />
+        <g stroke={INK} strokeWidth="3" fill="none"><path d="M1024 108 L1096 170 M1096 180 L1024 244 M1024 254 L1096 330" /></g>
+      </g>
+      <g fill="none" strokeLinecap="round">
+        <path d="M1000 112 C860 118 900 220 800 236 C720 248 740 320 660 338" stroke="#2d5a86" strokeWidth="15" />
+        <path d="M1122 112 C1290 120 1210 230 1320 250 C1390 262 1380 320 1420 338" stroke="#24486a" strokeWidth="15" />
+        <path d="M1000 186 C920 196 930 292 860 338" stroke="#3a6c98" strokeWidth="13" />
+        <path d="M1122 258 C1180 268 1170 320 1230 338" stroke="#2d5a86" strokeWidth="13" />
+      </g>
+      <g fill="none" stroke="#bfe0ea" strokeWidth="3" opacity=".75" strokeLinecap="round">
+        <path d="M640 352 q14 -14 28 0 M846 352 q14 -14 28 0 M1216 352 q14 -14 28 0 M1404 352 q12 -12 24 0" /><path d="M720 384 q30 -14 60 0 t60 0 M1000 392 q30 -14 60 0 t60 0" />
+      </g>
+      <Palm x={420} h={96} /><Palm x={500} h={66} flip /><Umbrella x={180} /><Umbrella x={270} />
     </>
   ),
   'kids-cove': () => (
     <>
-      <Ground />
-      <path d={`M620 ${BASE} H1320 V354 H620Z`} fill="url(#v-sea)" />
-      <g fill={INK}><rect x="940" y="226" width="10" height="110" /><rect x="1040" y="246" width="10" height="90" /><rect x="900" y="246" width="190" height="10" /><path d="M930 226 H1060 L995 190Z" />
-        <path d="M972 190 h46 l-8 34 h-30z" transform="rotate(18 995 200)" /></g>
-      <g fill="none" stroke={INK} strokeWidth="10" strokeLinecap="round"><path d="M1050 256 C1120 262 1130 310 1190 326" /><path d="M940 256 C880 262 870 306 820 326" /></g>
-      <g fill="none" stroke="#bfe0ea" strokeWidth="2.5" opacity=".8" strokeLinecap="round"><path d="M700 336 C700 300 716 290 730 286" /><path d="M700 336 C700 300 684 290 670 286" /><path d="M1250 336 C1250 306 1262 298 1274 294" /></g>
-      <Umbrella x={160} /><Umbrella x={250} /><Palm x={1380} h={90} flip /><Palm x={420} h={70} />
+      <path d={`M520 ${BASE - 2} H1440 V424 H520Z`} fill="url(#v-sea)" />
+      <Ground d={`M0 ${BASE} H560 C600 350 620 380 640 420 H0Z`} />
+      {/* play structure */}
+      <g fill={INK}>
+        <rect x="900" y="230" width="12" height="116" /><rect x="1010" y="230" width="12" height="116" /><rect x="1100" y="262" width="10" height="84" />
+        <rect x="884" y="230" width="154" height="12" /><rect x="1022" y="262" width="100" height="10" />
+        <path d="M876 230 H1046 L961 180Z" /><path d="M1012 262 H1130 L1071 226Z" />
+      </g>
+      <g fill="none" strokeLinecap="round">
+        <path d="M900 244 C830 250 820 316 760 338" stroke="#3a6c98" strokeWidth="13" />
+        <path d="M1110 274 C1170 280 1170 326 1220 338" stroke="#2d5a86" strokeWidth="12" />
+      </g>
+      {/* tipping bucket */}
+      <g transform="rotate(-24 961 160)"><path d="M936 138 H986 L978 176 H944Z" fill={GLOW} /></g>
+      <g stroke="#bfe0ea" strokeWidth="2.5" opacity=".85" strokeLinecap="round" fill="none"><path d="M932 178 l-6 22 M946 184 l-4 24 M960 188 l-2 24" /></g>
+      {/* shell and sprays */}
+      <path fill={INK} d="M1290 346 C1290 300 1322 276 1352 276 C1382 276 1414 300 1414 346Z" />
+      <g fill="none" stroke="#14233a" strokeWidth="2.5" opacity=".0" />
+      <g stroke={GLOW} strokeWidth="3" opacity=".7" fill="none"><path d="M1352 280 V346 M1322 292 L1338 346 M1382 292 L1366 346" /></g>
+      <g fill="none" stroke="#bfe0ea" strokeWidth="2.5" opacity=".8" strokeLinecap="round">
+        <path d="M680 346 C680 312 694 302 706 298 M680 346 C680 312 666 302 654 298" /><path d="M1260 346 C1260 322 1250 314 1242 312" />
+        <path d="M700 384 q30 -14 60 0 t60 0 M980 392 q30 -14 60 0 t60 0 M1240 386 q24 -12 48 0" />
+      </g>
+      <Umbrella x={150} /><Umbrella x={240} /><Umbrella x={330} /><Palm x={460} h={84} />
     </>
   ),
   'ridge-slides': () => (

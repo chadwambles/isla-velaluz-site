@@ -60,3 +60,7 @@
 .projects li + li { margin-top: 0.6rem; }
 .pre { background: var(--navy); color: var(--paper); padding: 1rem 1.2rem; overflow-x: auto; font-family: var(--font-code); font-size: 0.88rem; line-height: 1.6; max-width: 62rem; margin: 0 0 1.5rem; border-radius: 3px; }
 .page section[id] { scroll-margin-top: 1rem; }
+
+.callout a { color: var(--navy); font-weight: 600; }
+.links li, .lede, .tableName { overflow-wrap: anywhere; }
+.links { grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr)); }
