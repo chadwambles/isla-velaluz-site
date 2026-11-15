@@ -1,5 +1,6 @@
 import styles from './data.module.css';
-import { KAGGLE_URL } from '@/components/links';
+import Link from 'next/link';
+import { KAGGLE_URL, AUTHOR_URL } from '@/components/links';
 
 export const metadata = { title: { absolute: 'Isla Velaluz Data Center' } };
 
@@ -37,9 +38,19 @@ export default function DataHome() {
         </table>
       </div>
 
+      <h2 className={styles.h2}>See what a table looks like</h2>
+      <p>
+        Every table has a page with its columns, how it connects to the others, and its first five rows. Start with{' '}
+        <Link href="/data/tables/bookings/">bookings</Link>, the table most questions pass through.
+      </p>
+
       <p className={styles.note}>
-        The table-by-table dictionary, the question list and loading instructions are being added to this section.
-        Until then, all three are in the Kaggle download.
+        The full table index, the question list and loading instructions are being added to this section. Until then,
+        all three are in the Kaggle download.
+      </p>
+      <p className={styles.by}>
+        Built by <a href={AUTHOR_URL}>Chad Wambles</a>, a business analyst who wanted a practice company with real joins
+        and real answers.
       </p>
     </div>
   );

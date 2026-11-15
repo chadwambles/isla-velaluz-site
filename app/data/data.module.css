@@ -15,3 +15,5 @@
 .table tbody th { font-family: var(--font-display); font-weight: 400; font-size: 1.15rem; }
 .num { font-family: var(--font-code); font-size: 0.95rem; white-space: nowrap; }
 .note { margin-top: 2rem; padding: 0.9rem 1.1rem; background: var(--land); border-left: 4px solid var(--brass); max-width: 54rem; }
+
+.by { margin-top: 1.5rem; color: var(--muted); }

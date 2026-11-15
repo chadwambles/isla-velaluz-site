@@ -1,0 +1,192 @@
+[
+ {
+  "hotel_id": 1,
+  "hotel_code": "PC",
+  "hotel_name": "Palmetto Court",
+  "tier": "value",
+  "rooms": 640,
+  "opened_date": "1999-06-05",
+  "slug": "palmetto-court",
+  "room_types": [
+   {
+    "name": "Standard Two Queen",
+    "sleeps": 4
+   },
+   {
+    "name": "Courtyard King",
+    "sleeps": 2
+   },
+   {
+    "name": "Family Bunk Room",
+    "sleeps": 6
+   }
+  ],
+  "venues": [
+   {
+    "slug": "palmetto-food-court",
+    "name": "Palmetto Food Court",
+    "type": "quick service restaurant",
+    "kind": "dining"
+   },
+   {
+    "slug": "palmetto-pool-bar",
+    "name": "Palmetto Pool Bar",
+    "type": "bar",
+    "kind": "dining"
+   },
+   {
+    "slug": "court-sundries",
+    "name": "Court Sundries",
+    "type": "shop",
+    "kind": "shopping"
+   }
+  ]
+ },
+ {
+  "hotel_id": 2,
+  "hotel_code": "HC",
+  "hotel_name": "Hacienda Coral",
+  "tier": "moderate",
+  "rooms": 460,
+  "opened_date": "2005-02-19",
+  "slug": "hacienda-coral",
+  "room_types": [
+   {
+    "name": "Garden Two Queen",
+    "sleeps": 4
+   },
+   {
+    "name": "Family Suite",
+    "sleeps": 6
+   },
+   {
+    "name": "Poolside King",
+    "sleeps": 2
+   }
+  ],
+  "venues": [
+   {
+    "slug": "hacienda-cantina",
+    "name": "Hacienda Cantina",
+    "type": "table service restaurant",
+    "kind": "dining"
+   },
+   {
+    "slug": "coral-cafe",
+    "name": "Coral Cafe",
+    "type": "cafe",
+    "kind": "dining"
+   },
+   {
+    "slug": "coral-cove-pool-bar",
+    "name": "Coral Cove Pool Bar",
+    "type": "bar",
+    "kind": "dining"
+   },
+   {
+    "slug": "hacienda-mercado",
+    "name": "Hacienda Mercado",
+    "type": "shop",
+    "kind": "shopping"
+   }
+  ]
+ },
+ {
+  "hotel_id": 3,
+  "hotel_code": "CF",
+  "hotel_name": "Casa Faroluz",
+  "tier": "deluxe",
+  "rooms": 280,
+  "opened_date": "1997-05-10",
+  "slug": "casa-faroluz",
+  "room_types": [
+   {
+    "name": "Lighthouse View Two Queen",
+    "sleeps": 4
+   },
+   {
+    "name": "Harbor King",
+    "sleeps": 2
+   },
+   {
+    "name": "Keeper's Suite",
+    "sleeps": 5
+   }
+  ],
+  "venues": [
+   {
+    "slug": "keepers-table",
+    "name": "Keeper's Table",
+    "type": "table service restaurant",
+    "kind": "dining"
+   },
+   {
+    "slug": "faro-coffee-bar",
+    "name": "Faro Coffee Bar",
+    "type": "cafe",
+    "kind": "dining"
+   },
+   {
+    "slug": "lighthouse-lounge",
+    "name": "Lighthouse Lounge",
+    "type": "bar",
+    "kind": "dining"
+   },
+   {
+    "slug": "casa-boutique",
+    "name": "Casa Boutique",
+    "type": "shop",
+    "kind": "shopping"
+   }
+  ]
+ },
+ {
+  "hotel_id": 4,
+  "hotel_code": "MG",
+  "hotel_name": "The Velaluz Grand",
+  "tier": "luxury",
+  "rooms": 120,
+  "opened_date": "2015-11-14",
+  "slug": "the-velaluz-grand",
+  "room_types": [
+   {
+    "name": "Grand King",
+    "sleeps": 2
+   },
+   {
+    "name": "Gulf View Suite",
+    "sleeps": 4
+   },
+   {
+    "name": "Velaluz Residence",
+    "sleeps": 6
+   }
+  ],
+  "venues": [
+   {
+    "slug": "aurelia",
+    "name": "Aurelia",
+    "type": "table service restaurant",
+    "kind": "dining"
+   },
+   {
+    "slug": "the-grand-terrace",
+    "name": "The Grand Terrace",
+    "type": "bar",
+    "kind": "dining"
+   },
+   {
+    "slug": "grand-pantry",
+    "name": "Grand Pantry",
+    "type": "cafe",
+    "kind": "dining"
+   },
+   {
+    "slug": "velaluz-atelier",
+    "name": "Velaluz Atelier",
+    "type": "shop",
+    "kind": "shopping"
+   }
+  ]
+ }
+]

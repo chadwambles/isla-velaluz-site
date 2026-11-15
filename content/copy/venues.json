@@ -1,0 +1,16 @@
+{
+  "faro-bakery-and-coffee": {
+    "pitch": "Pastries out of the oven from park opening, and the first coffee most guests have on the island.",
+    "description": [
+      "The bakery sits just inside the gate on the plaza, which makes it the first stop of the morning for a lot of families. Order at the counter, then find a table under the lantern strings outside.",
+      "The guava pastelitos are baked through the morning. The lantern sugar cookie is the one the kids ask for."
+    ]
+  },
+  "lighthouse-mercantile": {
+    "pitch": "The big shop on the plaza, and the last stop on the way out of the park.",
+    "description": [
+      "Lighthouse Mercantile takes up most of one side of Plaza del Faro. It carries the widest range on the island: park shirts and hats, plush, pins, and the small things people forget to pack.",
+      "It is busiest in the hour before closing. Shop in the morning and you can have your bags held at the front of the park until you leave."
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "plaza-del-faro": {
+    "pitch": "The front door of the park: a lantern-strung square with the lighthouse at the far end.",
+    "description": [
+      "Every visit to Costa Encandela starts and ends in Plaza del Faro. The square runs from the front gate to the foot of El Faro, with the bakery on one side, the mercantile on the other and a carousel under cover for hot afternoons.",
+      "It is the best place in the park to be at closing time. The lanterns come on across the square, the theater lets out, and the lighthouse beam starts its sweep over the water."
+    ],
+    "art": "lighthouse-plaza"
+  }
+}

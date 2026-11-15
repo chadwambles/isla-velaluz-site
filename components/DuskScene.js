@@ -7,7 +7,7 @@ export default function DuskScene() {
     [760, 344], [828, 356], [896, 342], [962, 352],
   ];
   return (
-    <svg className={styles.scene} viewBox="0 0 1440 620" preserveAspectRatio="xMidYMax slice" role="img"
+    <svg className={styles.scene} viewBox="0 0 1440 620" role="img"
       aria-label="Illustration of an island at dusk: a lighthouse, a roller coaster and a wheel in silhouette, with a string of lanterns along the shore.">
       <defs>
         <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">

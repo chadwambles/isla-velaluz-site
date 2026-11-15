@@ -1,0 +1,59 @@
+[
+ {
+  "park_code": "CE",
+  "park_name": "Costa Encandela",
+  "park_type": "theme",
+  "opened_date": "1996-05-18",
+  "capacity": 4600,
+  "slug": "costa-encandela",
+  "usual_open": "9 AM",
+  "usual_close": "9 PM",
+  "latest_close": "11 PM",
+  "open_days_latest_year": 365,
+  "lands": [
+   "plaza-del-faro",
+   "villa-cuentos",
+   "bosque-luminoso",
+   "bahia-de-sirenas",
+   "puerto-viejo",
+   "cielo-alto"
+  ]
+ },
+ {
+  "park_code": "PT",
+  "park_name": "Punta Tormenta",
+  "park_type": "theme",
+  "opened_date": "2004-03-27",
+  "capacity": 3800,
+  "slug": "punta-tormenta",
+  "usual_open": "10 AM",
+  "usual_close": "9 PM",
+  "latest_close": "10 PM",
+  "open_days_latest_year": 365,
+  "lands": [
+   "stormwatch-pier",
+   "ironworks-wharf",
+   "remolino-cove",
+   "skybreak-heights",
+   "cabo-trueno"
+  ]
+ },
+ {
+  "park_code": "PY",
+  "park_name": "Playa Zambulla",
+  "park_type": "water",
+  "opened_date": "2009-05-02",
+  "capacity": 2000,
+  "slug": "playa-zambulla",
+  "usual_open": "10 AM",
+  "usual_close": "6 PM",
+  "latest_close": "7 PM",
+  "open_days_latest_year": 300,
+  "lands": [
+   "tortuga-beach",
+   "arrecife-slides",
+   "caracol-kids-cove",
+   "monsoon-ridge"
+  ]
+ }
+]

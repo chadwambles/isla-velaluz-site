@@ -1,4 +1,4 @@
-.scene { width: 100%; height: 100%; }
+.scene { position: absolute; right: 0; bottom: 0; width: max(100%, 64rem); max-width: none; height: auto; }
 
 .lantern { opacity: 0; animation: light 0.9s ease-out forwards; }
 @keyframes light { from { opacity: 0; } to { opacity: 1; } }

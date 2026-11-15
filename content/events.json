@@ -1,0 +1,140 @@
+[
+ {
+  "name": "Paseo Food and Rhythm Festival",
+  "slug": "paseo-food-and-rhythm-festival",
+  "event_type": "food festival",
+  "location": "Paseo Velaluz",
+  "registration_required": false,
+  "runs": [
+   {
+    "label": "Paseo Food and Rhythm Festival",
+    "first_date": "2018-05-03",
+    "last_date": "2025-05-18",
+    "nights": 8
+   }
+  ]
+ },
+ {
+  "name": "Tormenta Nights",
+  "slug": "tormenta-nights",
+  "event_type": "seasonal festival",
+  "location": "Punta Tormenta",
+  "registration_required": false,
+  "runs": [
+   {
+    "label": "Tormenta Nights",
+    "first_date": "2018-10-01",
+    "last_date": "2025-10-30",
+    "nights": 8
+   }
+  ]
+ },
+ {
+  "name": "Festival de las Linternas",
+  "slug": "festival-de-las-linternas",
+  "event_type": "seasonal festival",
+  "location": "Costa Encandela",
+  "registration_required": false,
+  "runs": [
+   {
+    "label": "Festival de las Linternas",
+    "first_date": "2018-11-15",
+    "last_date": "2025-12-29",
+    "nights": 8
+   }
+  ]
+ },
+ {
+  "name": "Noches de Velaluz",
+  "slug": "noches-de-velaluz",
+  "event_type": "concert night",
+  "location": "Paseo Velaluz",
+  "registration_required": true,
+  "runs": [
+   {
+    "label": "Noches de Velaluz Spring 2019",
+    "first_date": "2019-03-01",
+    "last_date": "2019-04-19",
+    "nights": 8
+   },
+   {
+    "label": "Noches de Velaluz Fall 2019",
+    "first_date": "2019-10-04",
+    "last_date": "2019-11-22",
+    "nights": 8
+   },
+   {
+    "label": "Noches de Velaluz Spring 2020",
+    "first_date": "2020-03-06",
+    "last_date": "2020-04-24",
+    "nights": 8
+   },
+   {
+    "label": "Noches de Velaluz Fall 2020",
+    "first_date": "2020-10-02",
+    "last_date": "2020-11-20",
+    "nights": 8
+   },
+   {
+    "label": "Noches de Velaluz Spring 2021",
+    "first_date": "2021-03-05",
+    "last_date": "2021-04-23",
+    "nights": 8
+   },
+   {
+    "label": "Noches de Velaluz Fall 2021",
+    "first_date": "2021-10-01",
+    "last_date": "2021-11-19",
+    "nights": 8
+   },
+   {
+    "label": "Noches de Velaluz Spring 2022",
+    "first_date": "2022-03-04",
+    "last_date": "2022-04-22",
+    "nights": 8
+   },
+   {
+    "label": "Noches de Velaluz Fall 2022",
+    "first_date": "2022-10-07",
+    "last_date": "2022-11-25",
+    "nights": 8
+   },
+   {
+    "label": "Noches de Velaluz Spring 2023",
+    "first_date": "2023-03-03",
+    "last_date": "2023-04-21",
+    "nights": 8
+   },
+   {
+    "label": "Noches de Velaluz Fall 2023",
+    "first_date": "2023-10-06",
+    "last_date": "2023-11-24",
+    "nights": 8
+   },
+   {
+    "label": "Noches de Velaluz Spring 2024",
+    "first_date": "2024-03-01",
+    "last_date": "2024-04-19",
+    "nights": 8
+   },
+   {
+    "label": "Noches de Velaluz Fall 2024",
+    "first_date": "2024-10-04",
+    "last_date": "2024-11-22",
+    "nights": 8
+   },
+   {
+    "label": "Noches de Velaluz Spring 2025",
+    "first_date": "2025-03-07",
+    "last_date": "2025-04-25",
+    "nights": 8
+   },
+   {
+    "label": "Noches de Velaluz Fall 2025",
+    "first_date": "2025-10-03",
+    "last_date": "2025-11-21",
+    "nights": 8
+   }
+  ]
+ }
+]

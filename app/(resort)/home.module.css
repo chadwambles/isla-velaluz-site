@@ -5,7 +5,7 @@
 .lede { margin-top: 1.25rem; font-size: clamp(1.05rem, 1.5vw, 1.25rem); max-width: 44ch; text-shadow: 0 1px 12px rgba(20, 16, 60, 0.6); }
 
 .band { padding-block: clamp(3rem, 7vw, 5.5rem); }
-.split { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 2.5rem 4rem; align-items: start; }
+.split { margin-top: clamp(3rem, 6vw, 4.5rem); display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 2.5rem 4rem; align-items: start; }
 .h2 { font-size: clamp(1.9rem, 3.2vw, 2.75rem); margin-bottom: 1rem; }
 .h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
 .aside { background: var(--tide); color: var(--foam); padding: 1.75rem 1.75rem 2rem; border-radius: 1.25rem 1.25rem 1.25rem 0.25rem; }
@@ -17,3 +17,5 @@
   .split { grid-template-columns: 1fr; }
   .copy { padding-bottom: 15rem; }
 }
+
+.hotels { grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); }
