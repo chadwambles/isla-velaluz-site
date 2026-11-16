@@ -1,0 +1,51 @@
+{
+ "passes": [
+  {
+   "pass_product_id": 3,
+   "pass_name": "Sol Pass",
+   "sold_from": "2024-01-08",
+   "sold_until": null,
+   "blocked_dates": "weekends, holiday periods and peak dates",
+   "includes_water_park": true,
+   "price": 464.0
+  },
+  {
+   "pass_product_id": 4,
+   "pass_name": "Marea Pass",
+   "sold_from": "2024-01-08",
+   "sold_until": null,
+   "blocked_dates": "peak dates",
+   "includes_water_park": true,
+   "price": 655.0
+  },
+  {
+   "pass_product_id": 5,
+   "pass_name": "Faro Pass",
+   "sold_from": "2024-01-08",
+   "sold_until": null,
+   "blocked_dates": "none",
+   "includes_water_park": true,
+   "price": 986.0
+  }
+ ],
+ "one_day_prices": [
+  {
+   "tier": "value",
+   "low": 100.0,
+   "high": 104.0,
+   "day_count": 88
+  },
+  {
+   "tier": "regular",
+   "low": 120.0,
+   "high": 125.0,
+   "day_count": 210
+  },
+  {
+   "tier": "peak",
+   "low": 144.0,
+   "high": 150.0,
+   "day_count": 67
+  }
+ ]
+}

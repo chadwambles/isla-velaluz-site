@@ -1,0 +1,34 @@
+{
+ "noches-de-velaluz": {
+  "pitch": "Friday concert nights on the Paseo, eight weeks each spring and fall.",
+  "description": [
+   "Noches de Velaluz is the island's concert series. For eight Fridays in the spring and eight in the fall, a stage goes up at the waterfront end of Paseo Velaluz and the promenade stays open late.",
+   "The concerts are free, but you need to register in advance because the waterfront has a capacity. Register one household at a time, for as many nights as you like."
+  ],
+  "art": "paseo-night"
+ },
+ "festival-de-las-linternas": {
+  "pitch": "Six weeks of lanterns at Costa Encandela, from mid November to the end of the year.",
+  "description": [
+   "Festival de las Linternas is the island's holiday season. From November 15 to December 29 the park is hung with thousands of extra lanterns, and the evening ends with a lantern procession from the lighthouse to the front gate.",
+   "The festival is included with park admission and needs no registration. These are some of the busiest weeks of the year, so expect peak-date ticket prices."
+  ],
+  "art": "lighthouse-plaza"
+ },
+ "tormenta-nights": {
+  "pitch": "October after dark at Punta Tormenta, when the storm theme gets turned all the way up.",
+  "description": [
+   "Tormenta Nights runs through October. The park stays open into the evening with fog, lightning effects and street performers on every walkway, and the coasters run in the dark.",
+   "It is included with park admission. It is louder and darker than a normal evening, and most families with small children find Costa Encandela a better choice on these nights."
+  ],
+  "art": "storm-point"
+ },
+ "paseo-food-and-rhythm-festival": {
+  "pitch": "Two weeks of food stalls and live music on the Paseo each May.",
+  "description": [
+   "The Paseo Food and Rhythm Festival fills the promenade from May 3 to May 18. Restaurants set up tasting stalls outside their doors, and bands play at both ends of the Paseo through the evening.",
+   "There is no gate and no ticket. Paseo Velaluz is open to everyone, whether or not you are visiting a park that day."
+  ],
+  "art": "paseo-night"
+ }
+}

@@ -1,0 +1,545 @@
+{
+ "themes": [
+  {
+   "theme": "Pricing, passes and promotions",
+   "questions": [
+    {
+     "number": 1,
+     "title": "Did date-based pricing work?",
+     "asked_by": "VP of Revenue",
+     "body": "In March 2019 one-day tickets moved from one flat price to prices that depend on the date. She wants to know what it did to crowding on the busiest days and to ticket revenue, and whether she should defend it at the next board meeting.",
+     "start_with": [
+      "calendar",
+      "tickets",
+      "park_entries",
+      "bookings"
+     ],
+     "skills": "SQL, statistics",
+     "size": "any",
+     "level": 2
+    },
+    {
+     "number": 2,
+     "title": "Was restructuring the annual pass a good trade?",
+     "asked_by": "Director of Pass Programs",
+     "body": "In January 2024 the two annual passes were replaced by three tiers. Pass revenue went up. He has been asked whether the resort lost anything it should care about.",
+     "start_with": [
+      "annual_passes",
+      "pass_products",
+      "transactions",
+      "venues"
+     ],
+     "skills": "SQL, business analysis",
+     "size": "any",
+     "level": 3
+    },
+    {
+     "number": 3,
+     "title": "Is the skip-the-line product good for guests?",
+     "asked_by": "Chief Experience Officer",
+     "body": "Paso Rapido launched in February 2022 and sells well. She wants to know how it affects the day for the guests who buy it and for the guests who do not.",
+     "start_with": [
+      "express_purchases",
+      "ride_events",
+      "survey_day_ratings",
+      "survey_responses",
+      "park_entries"
+     ],
+     "skills": "SQL, statistics",
+     "size": "Standard",
+     "level": 3
+    },
+    {
+     "number": 4,
+     "title": "Does the Stay and Play discount pay for itself?",
+     "asked_by": "Director of Hotel Revenue",
+     "body": "The 20% hotel package has run four times. Marketing calls it a success because thousands of bookings used the code. He wants to know how many of those bookings the discount actually caused.",
+     "start_with": [
+      "bookings",
+      "promotions",
+      "hotel_stays",
+      "calendar"
+     ],
+     "skills": "SQL, statistics, business analysis",
+     "size": "any",
+     "level": 3
+    },
+    {
+     "number": 5,
+     "title": "Should the mobile order offer be rolled out to everyone?",
+     "asked_by": "Product Manager, Guest App",
+     "body": "In fall 2021 a random half of eligible households were offered a discount on mobile food orders. She needs a recommendation: roll it out to all, to some, or drop it.",
+     "start_with": [
+      "experiment_assignments",
+      "transactions",
+      "promotions"
+     ],
+     "skills": "statistics, SQL",
+     "size": "Standard",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "theme": "Guest experience",
+   "questions": [
+    {
+     "number": 6,
+     "title": "What part of a trip decides whether a guest comes back?",
+     "asked_by": "Chief Experience Officer",
+     "body": "She has budget to improve one part of the visit and wants it spent where it changes rebooking most.",
+     "start_with": [
+      "survey_day_ratings",
+      "survey_responses",
+      "bookings"
+     ],
+     "skills": "statistics, SQL",
+     "size": "Standard",
+     "level": 3
+    },
+    {
+     "number": 7,
+     "title": "Are rain vouchers worth giving away?",
+     "asked_by": "Director of Guest Services",
+     "body": "Staff hand out free return vouchers on washed-out days, at their discretion. Finance sees a giveaway. He wants to know what the resort gets back.",
+     "start_with": [
+      "return_vouchers",
+      "bookings",
+      "weather_hourly",
+      "park_entries"
+     ],
+     "skills": "SQL, statistics",
+     "size": "any",
+     "level": 2
+    },
+    {
+     "number": 8,
+     "title": "Do the Paseo concert nights sell annual passes?",
+     "asked_by": "Marketing Manager, Local Market",
+     "body": "Noches de Velaluz has run every spring and fall since 2019 and costs money to put on. She wants to know whether it brings locals into the pass program, and how strongly she can claim that.",
+     "start_with": [
+      "events",
+      "event_registrations",
+      "annual_passes",
+      "households"
+     ],
+     "skills": "SQL, business analysis, statistics",
+     "size": "any",
+     "level": 2
+    },
+    {
+     "number": 9,
+     "title": "How do families with very young children use the parks?",
+     "asked_by": "Director of Park Operations",
+     "body": "He is planning dining hours and stroller services and suspects these families have a different day from everyone else.",
+     "start_with": [
+      "guests",
+      "park_entries",
+      "transactions",
+      "households"
+     ],
+     "skills": "SQL, dashboard",
+     "size": "any",
+     "level": 2
+    },
+    {
+     "number": 10,
+     "title": "Is guest satisfaction going up or down?",
+     "asked_by": "Chief Executive",
+     "body": "Each park's general manager reports that satisfaction in their park has improved every year. The resort-wide score she is shown has not. She wants to know who is right.",
+     "start_with": [
+      "survey_responses",
+      "survey_day_ratings",
+      "park_entries"
+     ],
+     "skills": "statistics, dashboard",
+     "size": "any",
+     "level": 2
+    },
+    {
+     "number": 11,
+     "title": "What did Cabo Trueno change?",
+     "asked_by": "VP of Development",
+     "body": "The new land opened in Punta Tormenta in May 2021. Before proposing the next one she wants a full account of what it did: to crowds, to waits elsewhere, to food sales, across all three parks.",
+     "start_with": [
+      "lands",
+      "attractions",
+      "park_entries",
+      "wait_snapshots",
+      "ride_events",
+      "transactions",
+      "venues"
+     ],
+     "skills": "SQL, dashboard",
+     "size": "any",
+     "level": 3
+    },
+    {
+     "number": 12,
+     "title": "Which park does lightning hurt more?",
+     "asked_by": "Director of Park Operations",
+     "body": "Both theme parks close outdoor rides when lightning is near. He wants to know how much ride capacity each park loses to weather and why they differ.",
+     "start_with": [
+      "ride_downtime",
+      "attractions",
+      "weather_hourly",
+      "lands"
+     ],
+     "skills": "SQL, dashboard",
+     "size": "any",
+     "level": 1
+    },
+    {
+     "number": 13,
+     "title": "How did the resort recover from the hurricane?",
+     "asked_by": "Chief Financial Officer",
+     "body": "The resort closed for six days in fall 2022. She wants to know how long demand took to come back, and whether it came back at the same pace for every kind of guest. She also wants a forecast method she can reuse.",
+     "start_with": [
+      "bookings",
+      "households",
+      "park_entries",
+      "calendar"
+     ],
+     "skills": "forecasting, SQL",
+     "size": "any",
+     "level": 3
+    }
+   ]
+  },
+  {
+   "theme": "Rides and maintenance",
+   "questions": [
+    {
+     "number": 14,
+     "title": "Why does El Remolino keep breaking down?",
+     "asked_by": "VP of Engineering",
+     "body": "The coaster's closures have become a regular guest complaint. He wants to know when it started, what is behind it, and what it would take to fix.",
+     "start_with": [
+      "ride_downtime",
+      "work_orders",
+      "attractions",
+      "budgets"
+     ],
+     "skills": "SQL, business analysis, dashboard",
+     "size": "any",
+     "level": 3
+    }
+   ]
+  },
+  {
+   "theme": "Food, retail and suppliers",
+   "questions": [
+    {
+     "number": 15,
+     "title": "Why are food waits so uneven?",
+     "asked_by": "Director of Food and Beverage",
+     "body": "Some days a quick service restaurant turns orders around in minutes and other days the same place is slow, with the same menu. She wants the cause.",
+     "start_with": [
+      "transactions",
+      "shifts",
+      "work_locations",
+      "venues",
+      "survey_day_ratings"
+     ],
+     "skills": "SQL, statistics",
+     "size": "any",
+     "level": 3
+    },
+    {
+     "number": 16,
+     "title": "Why do seafood dishes keep disappearing from menus?",
+     "asked_by": "Executive Chef",
+     "body": "Guests and servers both complain that seafood items are unavailable more and more often. He wants to know how often, since when, and whose fault it is.",
+     "start_with": [
+      "transaction_lines",
+      "products",
+      "purchase_orders",
+      "suppliers",
+      "inventory_daily"
+     ],
+     "skills": "SQL, business analysis",
+     "size": "any",
+     "level": 2
+    },
+    {
+     "number": 23,
+     "title": "Did snack and candy sales really change in April 2023?",
+     "asked_by": "Finance Manager",
+     "body": "The monthly category report shows some categories jumping and others collapsing from one month to the next. Nobody in operations noticed anything. She needs a category trend she can trust across the whole eight years.",
+     "start_with": [
+      "transaction_lines",
+      "products",
+      "category_code_map",
+      "transactions"
+     ],
+     "skills": "SQL, business analysis",
+     "size": "any",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "theme": "People",
+   "questions": [
+    {
+     "number": 17,
+     "title": "Did the 2023 wage increase reduce turnover?",
+     "asked_by": "Chief People Officer",
+     "body": "Hourly pay went up in April 2023, largely to stop people leaving. She needs to report whether it worked, and whether it worked everywhere.",
+     "start_with": [
+      "employees",
+      "employment_history",
+      "departments",
+      "positions"
+     ],
+     "skills": "SQL, statistics",
+     "size": "any",
+     "level": 2
+    },
+    {
+     "number": 18,
+     "title": "Is staff training worth the hours?",
+     "asked_by": "Training Manager",
+     "body": "Training takes people off the floor and managers resent it. He wants evidence, one way or the other, that it shows up in something guests notice.",
+     "start_with": [
+      "training_completions",
+      "training_courses",
+      "employees",
+      "work_locations",
+      "complaints",
+      "transactions"
+     ],
+     "skills": "SQL, statistics",
+     "size": "any",
+     "level": 3
+    },
+    {
+     "number": 19,
+     "title": "Where is the overtime coming from?",
+     "asked_by": "Chief Financial Officer",
+     "body": "Overtime cost is up and she does not know why. She wants the department, the date it began and the cause.",
+     "start_with": [
+      "payroll",
+      "shifts",
+      "employees",
+      "departments"
+     ],
+     "skills": "SQL, dashboard",
+     "size": "any",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "theme": "Process and service",
+   "questions": [
+    {
+     "number": 20,
+     "title": "Why do refunds take so long?",
+     "asked_by": "Director of Guest Services",
+     "body": "Guests complain that refunds are slow. Staff say most are fast. He wants to know which refunds are slow, since when, and where in the process the time goes.",
+     "start_with": [
+      "refunds",
+      "refund_events"
+     ],
+     "skills": "process mining, SQL",
+     "size": "any",
+     "level": 2
+    },
+    {
+     "number": 21,
+     "title": "Is the IT help desk working?",
+     "asked_by": "Chief Information Officer",
+     "body": "Overall ticket numbers look acceptable. Complaints from other departments say otherwise. She wants to know where the problem is and what is causing it.",
+     "start_with": [
+      "it_tickets",
+      "it_systems",
+      "employees"
+     ],
+     "skills": "SQL, dashboard, business analysis",
+     "size": "any",
+     "level": 2
+    },
+    {
+     "number": 22,
+     "title": "What should the guest app do next?",
+     "asked_by": "Product Manager, Guest App",
+     "body": "The backlog is full of ideas from inside the company. He wants one requirement that comes from guests themselves, written up with the evidence, and he suspects it is hiding somewhere nobody has read closely.",
+     "start_with": [
+      "complaints",
+      "ride_downtime",
+      "survey_responses"
+     ],
+     "skills": "text analysis, business analysis",
+     "size": "any",
+     "level": 3
+    },
+    {
+     "number": 24,
+     "title": "Why do systems keep going down?",
+     "asked_by": "Chief Information Officer",
+     "body": "Outages come in clusters. She wants to know whether they are bad luck or something the department is doing to itself, and what rule would prevent the most.",
+     "start_with": [
+      "it_incidents",
+      "change_requests",
+      "it_systems"
+     ],
+     "skills": "SQL, statistics",
+     "size": "any",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "theme": "Marketing and finance",
+   "questions": [
+    {
+     "number": 25,
+     "title": "How many bookings do the email campaigns really drive?",
+     "asked_by": "Chief Marketing Officer",
+     "body": "The attribution report credits email with a large number of bookings at almost no cost, and the team wants to triple the send volume. Before agreeing, she wants a second opinion on that number.",
+     "start_with": [
+      "campaigns",
+      "campaign_audience",
+      "booking_attribution",
+      "bookings"
+     ],
+     "skills": "statistics, business analysis",
+     "size": "Standard",
+     "level": 3
+    },
+    {
+     "number": 26,
+     "title": "Which department cannot budget its labor?",
+     "asked_by": "Controller",
+     "body": "Every department misses its labor budget sometimes. He wants to know whether anyone misses it in the same way every year, and what they should change in how they build the budget.",
+     "start_with": [
+      "budgets",
+      "gl_entries",
+      "gl_accounts",
+      "departments",
+      "payroll"
+     ],
+     "skills": "SQL, dashboard",
+     "size": "any",
+     "level": 2
+    },
+    {
+     "number": 27,
+     "title": "Does deferred ticket revenue reconcile?",
+     "asked_by": "External Auditor",
+     "body": "She has asked for the deferred ticket revenue balance in the ledger to be tied to the ticketing system at every month end. Find any month that does not tie, explain the difference to the dollar, and say whether it was corrected.",
+     "start_with": [
+      "gl_entries",
+      "gl_accounts",
+      "tickets"
+     ],
+     "skills": "SQL, business analysis",
+     "size": "Full",
+     "level": 3
+    }
+   ]
+  },
+  {
+   "theme": "Three more that nobody planned",
+   "questions": [
+    {
+     "number": 28,
+     "title": "Why did every hourly department blow its labor budget in summer 2023?",
+     "asked_by": "Controller",
+     "body": "",
+     "start_with": [
+      "budgets",
+      "gl_entries",
+      "employment_history"
+     ],
+     "skills": "SQL, business analysis",
+     "size": "any",
+     "level": 1
+    },
+    {
+     "number": 29,
+     "title": "When should the resort add first aid staff?",
+     "asked_by": "Director of Safety",
+     "body": "",
+     "start_with": [
+      "safety_incidents",
+      "weather_hourly",
+      "park_entries",
+      "park_hours"
+     ],
+     "skills": "statistics, forecasting",
+     "size": "any (rates per visit need Full)",
+     "level": 2
+    },
+    {
+     "number": 30,
+     "title": "Which menu items and shops make the money?",
+     "asked_by": "Director of Food and Beverage",
+     "body": "She knows sales by item. She has never seen margin by item, venue or category.",
+     "start_with": [
+      "transaction_lines",
+      "product_ingredients",
+      "inventory_items",
+      "purchase_order_lines",
+      "products",
+      "venues"
+     ],
+     "skills": "SQL, dashboard",
+     "size": "any",
+     "level": 2
+    }
+   ]
+  }
+ ],
+ "projects": [
+  {
+   "name": "Executive dashboard",
+   "body": "Attendance, occupancy, revenue per guest, satisfaction and labor cost on one page, with the 2022 closure handled sensibly."
+  },
+  {
+   "name": "Attendance forecast",
+   "body": "Daily park attendance from the calendar, weather, prices and school breaks. Train on 2018 to 2023 and test on 2024 and 2025."
+  },
+  {
+   "name": "Wait time model",
+   "body": "Predict posted waits by attraction and quarter hour, then check posted against actual waits in ride_events."
+  },
+  {
+   "name": "Hotel revenue management",
+   "body": "Occupancy, average rate and revenue per available room by hotel, room type and season."
+  },
+  {
+   "name": "Customer segmentation",
+   "body": "Cluster households on visit frequency, spend, party type and market. Then describe each segment in plain words."
+  },
+  {
+   "name": "Customer lifetime value",
+   "body": "Value per household by acquisition year and market, and how long a new household takes to pay back."
+  },
+  {
+   "name": "Market basket",
+   "body": "What sells together at quick service restaurants and in shops."
+  },
+  {
+   "name": "Income statement and variance pack",
+   "body": "Monthly income statement from the ledger with budget variances and commentary."
+  },
+  {
+   "name": "Workforce planning",
+   "body": "Staff hours against attendance by department. Where is the resort over or under staffed by season?"
+  },
+  {
+   "name": "Supplier scorecard",
+   "body": "On-time rate, cost trend and spend share for all twelve suppliers."
+  },
+  {
+   "name": "Maintenance reliability",
+   "body": "Time between failures and time to repair by ride type and age."
+  },
+  {
+   "name": "Requirements package",
+   "body": "Pick any question above and write it up as a business analyst would: problem statement, stakeholders, current and future state, requirements, acceptance criteria and a measure of success."
+  }
+ ]
+}

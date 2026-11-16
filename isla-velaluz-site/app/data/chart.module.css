@@ -1,0 +1,66 @@
+/* Chart Room pieces shared by Data Center pages. */
+.page { padding-block: 2rem clamp(3rem, 7vw, 5rem); }
+.crumbs { list-style: none; display: flex; flex-wrap: wrap; margin: 0 0 1.5rem; padding: 0; font-size: 0.95rem; color: var(--muted); }
+.crumbs li + li::before { content: '/'; margin-inline: 0.55rem; }
+
+.tableName { font-family: var(--font-code); font-weight: 500; font-size: clamp(2rem, 5vw, 3.25rem); letter-spacing: -0.02em; overflow-wrap: anywhere; }
+.lede { margin-top: 1rem; font-size: 1.15rem; max-width: 60ch; }
+.small { color: var(--muted); font-size: 0.95rem; margin-top: 0.75rem; }
+
+.stats { display: flex; flex-wrap: wrap; gap: 0; margin: 2rem 0 0; border: 1.5px solid var(--navy); background: var(--paper); width: fit-content; max-width: 100%; }
+.stats div { padding: 0.7rem 1.1rem; border-right: 1px solid var(--rule); }
+.stats div:last-child { border-right: 0; }
+.stats dt { font-size: 0.85rem; color: var(--muted); }
+.stats dd { margin: 0.15rem 0 0; font-weight: 600; }
+.num, .code { font-family: var(--font-code); font-size: 0.93em; }
+
+.h2 { font-size: 1.75rem; margin: 3rem 0 1rem; }
+.h3 { font-family: var(--font-body); font-weight: 600; font-size: 1rem; margin-bottom: 0.5rem; }
+
+.scroll { overflow-x: auto; border: 1.5px solid var(--navy); background: var(--paper); }
+.scroll:focus-visible { outline: 3px solid var(--accent); }
+.table { border-collapse: collapse; width: 100%; }
+.table th, .table td { text-align: left; padding: 0.6rem 0.85rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.table tbody tr:last-child th, .table tbody tr:last-child td { border-bottom: 0; }
+.table thead th { font-weight: 600; background: var(--shoal); border-bottom: 1.5px solid var(--navy); white-space: nowrap; }
+.table tbody th { font-weight: 500; white-space: nowrap; }
+.tag { margin-left: 0.5rem; font-family: var(--font-body); font-size: 0.75rem; font-weight: 600; color: var(--paper); background: var(--rose); padding: 0.1rem 0.4rem; border-radius: 2px; vertical-align: 0.1em; }
+.values { color: var(--muted); font-size: 0.95rem; min-width: 12rem; }
+.rows td, .rows th { white-space: nowrap; font-family: var(--font-code); font-size: 0.85rem; }
+
+.links { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.5rem 3rem; max-width: 54rem; }
+.links ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+
+.actions { margin-top: 2.5rem; }
+.primary { display: inline-block; background: var(--navy); color: var(--paper); text-decoration: none; font-weight: 600; padding: 0.75rem 1.2rem; border-radius: 3px; box-shadow: 4px 4px 0 var(--brass); }
+.primary:hover { background: var(--rose); }
+
+@media (max-width: 40rem) { .stats div { border-right: 0; border-bottom: 1px solid var(--rule); width: 100%; } .stats div:last-child { border-bottom: 0; } }
+
+/* Index, questions and downloads */
+.title { font-size: clamp(2rem, 4.6vw, 3.4rem); max-width: 20ch; }
+.right { text-align: right !important; }
+.jump { list-style: none; display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; margin: 1.5rem 0 0; padding: 0; }
+.callout { margin-top: 2rem; padding: 1rem 1.2rem; background: var(--land); border-left: 4px solid var(--brass); max-width: 62rem; }
+.callout p { max-width: 78ch; }
+
+.questions { margin: 0; padding: 0 0 0 2.6rem; max-width: 62rem; }
+.questions li { padding: 1.25rem 0 1.4rem; border-top: 1px solid var(--rule); }
+.questions li:first-child { border-top: 1.5px solid var(--navy); }
+.questions li::marker { font-family: var(--font-display); font-size: 1.6rem; color: var(--rose); }
+.qTitle { font-size: 1.45rem; margin-bottom: 0.5rem; }
+.questions p { max-width: 72ch; }
+.asked { font-weight: 600; }
+.qMeta { display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; margin: 0.9rem 0 0; font-size: 0.95rem; }
+.qMeta div { display: flex; gap: 0.5rem; }
+.qMeta dt { color: var(--muted); }
+.qMeta dd { margin: 0; }
+
+.projects { margin: 0.75rem 0 0; padding-left: 1.2rem; max-width: 72ch; }
+.projects li + li { margin-top: 0.6rem; }
+.pre { background: var(--navy); color: var(--paper); padding: 1rem 1.2rem; overflow-x: auto; font-family: var(--font-code); font-size: 0.88rem; line-height: 1.6; max-width: 62rem; margin: 0 0 1.5rem; border-radius: 3px; }
+.page section[id] { scroll-margin-top: 1rem; }
+
+.callout a { color: var(--navy); font-weight: 600; }
+.links li, .lede, .tableName { overflow-wrap: anywhere; }
+.links { grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr)); }
