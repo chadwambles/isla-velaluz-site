@@ -1,5 +1,7 @@
 # Isla Velaluz site
 
+https://www.islavelaluz.com
+
 The website for Isla Velaluz, a fictional island resort and the home of a free synthetic dataset for analyst
 portfolio projects. The resort is not real and nothing on the site can be booked.
 
@@ -48,5 +50,5 @@ gate loses its `noindex`, or if an internal link is broken. No answers live in t
 
 Vercel builds and publishes on every push to `main`. Framework preset: Next.js. No environment variables.
 
-When the custom domain is attached, change `SITE_URL` in `components/links.js` to the new address and push. That one
-value feeds the sitemap, `robots.txt` and the social preview image links.
+The site is served at https://www.islavelaluz.com. `SITE_URL` in `components/links.js` holds that address and feeds
+the sitemap, `robots.txt` and the social preview image links.

@@ -1,5 +1,0 @@
-.thrill { display: inline-flex; align-items: center; gap: 0.6rem; }
-.pips { display: inline-flex; gap: 0.28rem; }
-.pips span { width: 0.6rem; height: 0.85rem; border-radius: 0.2rem; border: 1.5px solid var(--ink); }
-.on { background: var(--lantern); }
-.off { background: transparent; opacity: 0.4; }
